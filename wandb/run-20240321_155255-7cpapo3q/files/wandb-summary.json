@@ -1,1 +1,0 @@
-{"_wandb": {"runtime": 16}, "train_loss": 34.70026397705078, "_timestamp": 1711016581.1495824, "train_edge_loss": 0.04183393344283104, "train_human_parts_loss": 2.01572322845459, "train_semseg_loss": 3.134492874145508, "train_normals_loss": 2.424642324447632, "train_sal_loss": 0.23924124240875244, "_runtime": 5.216249465942383, "_step": 0}

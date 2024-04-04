@@ -1,1 +1,0 @@
-{"train_loss": 38.544166564941406, "_timestamp": 1711014041.04771, "train_edge_loss": 0.04569108411669731, "train_human_parts_loss": 2.000164270401001, "train_semseg_loss": 2.9371001720428467, "train_normals_loss": 2.780651807785034, "train_sal_loss": 0.3031328320503235, "_runtime": 17.901532888412476, "_step": 14}

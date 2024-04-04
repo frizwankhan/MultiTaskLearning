@@ -1,1 +1,0 @@
-{"_wandb": {"runtime": 6}, "train_loss": 75.44284057617188, "_timestamp": 1711972550.0370636, "train_depth_loss": 35.69794464111328, "train_semseg_loss": 3.0572993755340576, "learning rate": 5.0000000000000004e-08, "_runtime": 4.683285713195801, "_step": 0}
