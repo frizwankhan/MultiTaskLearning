@@ -1,0 +1,829 @@
+
+Epoch 0, Loss: 34.8761, step: 0:   0%|                                                                                 | 0/157 [00:04<?, ?it/s]
+  0%|                                                                                                                  | 0/160 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 12%|█████████████▏                                                                                           | 20/160 [00:34<03:19,  1.42s/it]
+ Edge Detection Evaluation
+Edge Detection Loss 0.053
+Human Parts mIoU: 0.2762
+background     0.3547
+head           0.0008
+torso          0.0000
+uarm           0.1576
+larm           0.0000
+uleg           0.0412
+lleg           1.3794
+Semantic Segmentation mIoU: 0.2494
+background          0.0000
+aeroplane           0.0000
+bicycle             0.0000
+bird                0.0000
+boat                0.3413
+bottle              0.9024
+bus                 1.1888
+car                 0.0000
+cat                 0.0000
+chair               0.2502
+cow                 0.0000
+diningtable         0.3950
+dog                 0.0000
+horse               0.6902
+motorbike           0.0000
+person              0.2144
+pottedplant         0.0000
+sheep               0.4127
+sofa                0.0000
+train               0.0000
+tvmonitor           0.8420
+Validation Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0, Loss: 35.2019, step: 156:   0%|                                                                               | 0/157 [03:08<?, ?it/s]
+  0%|                                                                                                                  | 0/157 [00:00<?, ?it/s]
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 0 is less than current step: 156. Dropping entry: {'epoch_loss_train': 35.34024066074639, '_timestamp': 1711022374.3674045}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2, Loss: 33.5170, step: 1:   0%|                                                                                 | 0/157 [00:03<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 313. Dropping entry: {'epoch_loss_train': 34.27235104020234, '_timestamp': 1711022511.0728292}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2, Loss: 22.2271, step: 156:   0%|                                                                               | 0/157 [02:19<?, ?it/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 470. Dropping entry: {'epoch_loss_train': 29.732157701139997, '_timestamp': 1711022650.43752}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3, Loss: 23.3668, step: 29:   0%|                                                                                | 0/157 [00:28<?, ?it/s]
+Doing Validation
+ Edge Detection Evaluation
+Edge Detection Loss 0.051
+Human Parts mIoU: 11.0847
+background     77.5925
+head           0.0000
+torso          0.0000
+uarm           0.0000
+larm           0.0000
+uleg           0.0001
+lleg           0.0000
+Semantic Segmentation mIoU: 2.9243
+background          53.7791
+aeroplane           0.0000
+bicycle             0.0000
+bird                0.0000
+boat                0.0000
+bottle              0.4747
+bus                 0.6740
+car                 0.0000
+cat                 0.0000
+chair               1.1864
+cow                 0.4129
+diningtable         0.6626
+dog                 0.0000
+horse               0.0000
+motorbike           0.0000
+person              4.2202
+pottedplant         0.0000
+sheep               0.0000
+sofa                0.0000
+train               0.0000
+tvmonitor           0.0000
+Validation Done
+Epoch: 3| Iteration: 500| TrainingLoss: 23.366836547851562| ValidationLoss: 3.0605016231536863
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4, Loss: 15.1614, step: 1:   0%|                                                                                 | 0/157 [00:03<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 627. Dropping entry: {'epoch_loss_train': 20.02418111084373, '_timestamp': 1711022841.5161715}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4, Loss: 13.4827, step: 156:   0%|                                                                               | 0/157 [02:18<?, ?it/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 784. Dropping entry: {'epoch_loss_train': 13.679470013660989, '_timestamp': 1711022979.8430462}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6, Loss: 11.8867, step: 11:   0%|                                                                                | 0/157 [00:12<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 941. Dropping entry: {'epoch_loss_train': 12.334394330431701, '_timestamp': 1711023117.7923164}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6, Loss: 11.4265, step: 58:   0%|                                                                                | 0/157 [00:53<?, ?it/s]
+  0%|                                                                                                                  | 0/160 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 12%|█████████████▏                                                                                           | 20/160 [00:34<03:27,  1.49s/it]
+ Edge Detection Evaluation
+Edge Detection Loss 0.045
+Human Parts mIoU: 13.1061
+background     88.1249
+head           1.5985
+torso          0.0000
+uarm           0.0004
+larm           0.0000
+uleg           0.0043
+lleg           2.0150
+Semantic Segmentation mIoU: 3.7695
+background          71.3144
+aeroplane           0.0000
+bicycle             0.0000
+bird                1.1444
+boat                0.9373
+bottle              1.0856
+bus                 2.4242
+car                 0.0002
+cat                 0.0026
+chair               0.0015
+cow                 0.0000
+diningtable         0.0000
+dog                 0.0000
+horse               0.3722
+motorbike           0.0000
+person              0.0208
+pottedplant         0.0000
+sheep               1.8376
+sofa                0.0000
+train               0.0000
+tvmonitor           0.0179
+Validation Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6, Loss: 9.7974, step: 156:   0%|                                                                                | 0/157 [03:16<?, ?it/s]
+  0%|                                                                                                                  | 0/157 [00:00<?, ?it/s]
+
+
+
+
+Epoch 7, Loss: 10.4316, step: 8:   0%|                                                                                 | 0/157 [00:10<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 8, Loss: 10.2326, step: 0:   0%|                                                                                 | 0/157 [00:02<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 1255. Dropping entry: {'epoch_loss_train': 10.934494304049547, '_timestamp': 1711023472.4149966}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 8, Loss: 7.4129, step: 156:   0%|                                                                                | 0/157 [02:18<?, ?it/s]
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 1412. Dropping entry: {'epoch_loss_train': 10.240103387528924, '_timestamp': 1711023610.5524755}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  File "main.py", line 59, in <module>                                                                                 | 0/157 [01:05<?, ?it/s]
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 107, in train
+    for i, batch in enumerate(self.train_dataloader):
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 52, in train_step
+    wandb.log({f"train_{task}_loss": loss_dict[task].item()}, step=self.iter_count)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1828, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1596, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1468, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 573, in publish_partial_history
+    item.value_json = json_dumps_safer_history(v)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/wandb/util.py", line 842, in json_dumps_safer_history
+    return dumps(obj, cls=WandBHistoryJSONEncoder, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+KeyboardInterrupt

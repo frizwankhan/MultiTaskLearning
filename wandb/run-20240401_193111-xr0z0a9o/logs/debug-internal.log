@@ -1,0 +1,394 @@
+2024-04-01 19:31:11,910 INFO    StreamThr :2345462 [internal.py:wandb_internal():86] W&B internal server running at pid: 2345462, started at: 2024-04-01 19:31:11.910260
+2024-04-01 19:31:11,915 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status
+2024-04-01 19:31:11,917 INFO    WriterThread:2345462 [datastore.py:open_for_write():87] open: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/run-xr0z0a9o.wandb
+2024-04-01 19:31:11,921 DEBUG   SenderThread:2345462 [sender.py:send():378] send: header
+2024-04-01 19:31:11,921 DEBUG   SenderThread:2345462 [sender.py:send():378] send: run
+2024-04-01 19:31:12,591 INFO    SenderThread:2345462 [dir_watcher.py:__init__():211] watching files in: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files
+2024-04-01 19:31:12,591 INFO    SenderThread:2345462 [sender.py:_start_run_threads():1099] run started: xr0z0a9o with start time 1711980071.907701
+2024-04-01 19:31:12,592 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: check_version
+2024-04-01 19:31:12,592 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: check_version
+2024-04-01 19:31:12,675 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: run_start
+2024-04-01 19:31:12,689 DEBUG   HandlerThread:2345462 [system_info.py:__init__():26] System info init
+2024-04-01 19:31:12,689 DEBUG   HandlerThread:2345462 [system_info.py:__init__():41] System info init done
+2024-04-01 19:31:12,690 INFO    HandlerThread:2345462 [system_monitor.py:start():194] Starting system monitor
+2024-04-01 19:31:12,690 INFO    SystemMonitor:2345462 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-01 19:31:12,690 INFO    HandlerThread:2345462 [system_monitor.py:probe():214] Collecting system info
+2024-04-01 19:31:12,699 INFO    SystemMonitor:2345462 [interfaces.py:start():190] Started cpu monitoring
+2024-04-01 19:31:12,700 INFO    SystemMonitor:2345462 [interfaces.py:start():190] Started disk monitoring
+2024-04-01 19:31:12,700 INFO    SystemMonitor:2345462 [interfaces.py:start():190] Started gpu monitoring
+2024-04-01 19:31:12,701 INFO    SystemMonitor:2345462 [interfaces.py:start():190] Started memory monitoring
+2024-04-01 19:31:12,701 INFO    SystemMonitor:2345462 [interfaces.py:start():190] Started network monitoring
+2024-04-01 19:31:12,749 DEBUG   HandlerThread:2345462 [system_info.py:probe():150] Probing system
+2024-04-01 19:31:12,757 DEBUG   HandlerThread:2345462 [gitlib.py:_init_repo():56] git repository is invalid
+2024-04-01 19:31:12,757 DEBUG   HandlerThread:2345462 [system_info.py:probe():198] Probing system done
+2024-04-01 19:31:12,757 DEBUG   HandlerThread:2345462 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-174-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-04-01T14:01:12.749407', 'startedAt': '2024-04-01T14:01:11.899977', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'dgx1', 'username': 'rizwank', 'executable': '/raid/home/rizwank/courses/DLCV/Project/env/bin/python3', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2685.157925, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2660.817, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.624, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.665, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.035, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.04, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.04, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.04, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.037, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.038, 'min': 1200.0, 'max': 3600.0}, {'current': 2661.665, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.901, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.038, 'min': 1200.0, 'max': 3600.0}, {'current': 2671.546, 'min': 1200.0, 'max': 3600.0}, {'current': 2671.357, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.041, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.037, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.878, 'min': 1200.0, 'max': 3600.0}, {'current': 2676.199, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.878, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.037, 'min': 1200.0, 'max': 3600.0}, {'current': 2725.309, 'min': 1200.0, 'max': 3600.0}, {'current': 2758.174, 'min': 1200.0, 'max': 3600.0}, {'current': 2711.313, 'min': 1200.0, 'max': 3600.0}, {'current': 2748.97, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.217, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.225, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.235, 'min': 1200.0, 'max': 3600.0}, {'current': 2673.134, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.039, 'min': 1200.0, 'max': 3600.0}, {'current': 2804.008, 'min': 1200.0, 'max': 3600.0}, {'current': 2803.983, 'min': 1200.0, 'max': 3600.0}, {'current': 2698.15, 'min': 1200.0, 'max': 3600.0}, {'current': 2804.111, 'min': 1200.0, 'max': 3600.0}, {'current': 2712.911, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.451, 'min': 1200.0, 'max': 3600.0}, {'current': 2791.248, 'min': 1200.0, 'max': 3600.0}, {'current': 2696.828, 'min': 1200.0, 'max': 3600.0}, {'current': 2705.385, 'min': 1200.0, 'max': 3600.0}, {'current': 2705.778, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.256, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 438.0733413696289, 'used': 249.93951416015625}}, 'gpu': 'Tesla V100-SXM2-32GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}], 'memory': {'total': 503.77757263183594}}
+2024-04-01 19:31:12,757 INFO    HandlerThread:2345462 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-01 19:31:12,757 INFO    HandlerThread:2345462 [system_monitor.py:probe():227] Publishing system info
+2024-04-01 19:31:12,758 INFO    HandlerThread:2345462 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-01 19:31:12,761 DEBUG   SenderThread:2345462 [sender.py:send():378] send: files
+2024-04-01 19:31:12,761 INFO    SenderThread:2345462 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-04-01 19:31:12,877 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-01 19:31:12,877 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: python_packages
+2024-04-01 19:31:12,882 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:31:12,882 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:31:12,894 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:31:13,362 DEBUG   SenderThread:2345462 [sender.py:send():378] send: telemetry
+2024-04-01 19:31:13,591 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/requirements.txt
+2024-04-01 19:31:13,592 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/wandb-metadata.json
+2024-04-01 19:31:13,592 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:13,823 INFO    wandb-upload_0:2345462 [upload_job.py:push():131] Uploaded file /tmp/tmp74u6hamowandb/577a9ulj-wandb-metadata.json
+2024-04-01 19:31:15,591 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:17,122 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 19:31:17,122 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 19:31:17,122 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 19:31:17,122 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-01 19:31:17,123 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:19,592 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:22,135 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:27,135 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:27,879 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:31:27,879 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:31:27,892 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:31:29,595 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:32,165 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:37,598 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:37,980 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:42,879 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:31:42,879 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:31:42,892 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:31:43,191 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:43,601 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/config.yaml
+2024-04-01 19:31:43,601 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:48,485 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:51,603 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:31:54,338 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:31:57,879 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:31:57,880 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:31:57,892 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:31:59,606 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:00,232 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:05,233 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:07,608 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:10,528 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:12,702 DEBUG   SystemMonitor:2345462 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-01 19:32:12,704 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:32:12,879 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:32:12,879 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:32:12,892 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:32:13,610 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:16,214 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:21,440 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:21,612 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:26,441 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:27,879 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:32:27,880 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:32:27,892 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:32:29,615 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:32,169 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:37,617 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:37,983 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:42,706 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:32:42,965 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:32:42,965 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:32:42,966 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:32:43,255 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:45,619 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:48,809 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:53,622 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:32:54,657 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:32:58,104 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:32:58,105 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:32:58,105 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:32:59,624 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:00,314 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:05,315 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:07,626 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:11,060 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:12,708 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:33:13,093 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:33:13,094 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:33:13,103 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:33:15,628 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:16,740 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:21,741 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:23,631 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:27,299 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:28,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:33:28,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:33:28,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:33:31,633 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:32,755 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:37,635 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:38,419 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:42,709 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:33:43,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:33:43,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:33:43,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:33:43,498 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:45,637 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:48,957 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:53,641 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:33:54,574 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:33:58,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:33:58,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:33:58,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:34:00,106 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:01,643 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:05,148 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:09,646 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:10,899 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:12,711 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:34:13,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:34:13,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:34:13,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:34:15,648 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:16,352 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:21,353 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:23,650 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:26,928 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:28,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:34:28,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:34:28,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:34:31,654 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:32,564 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:37,565 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:39,656 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:42,713 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:34:42,714 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:43,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:34:43,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:34:43,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:34:47,659 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:47,808 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:52,809 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:53,660 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:34:58,114 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:34:58,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:34:58,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:34:58,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:35:01,663 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:03,779 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:09,271 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:09,665 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:12,714 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:35:13,175 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:35:13,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:35:13,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:35:14,514 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:17,667 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:19,801 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:23,669 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:25,420 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:28,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:35:28,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:35:28,179 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:35:30,462 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:31,672 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:35,948 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:39,674 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:41,502 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:42,716 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:35:43,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:35:43,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:35:43,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:35:46,937 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:47,677 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:51,938 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:55,681 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:35:57,504 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:35:58,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:35:58,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:35:58,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:36:02,683 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:03,072 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:08,073 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:10,685 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:12,718 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:36:13,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:36:13,176 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:36:13,179 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:36:13,500 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:18,656 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:18,688 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:23,657 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:26,691 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:28,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:36:28,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:36:28,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:36:29,567 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:34,693 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:34,935 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:40,538 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:42,696 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:42,719 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:36:43,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:36:43,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:36:43,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:36:46,451 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:48,697 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:52,039 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:56,700 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:36:57,666 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:36:58,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:36:58,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:36:58,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:37:03,292 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:04,702 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:08,293 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:12,704 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:12,721 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:37:13,176 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:37:13,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:37:13,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:37:13,518 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:19,455 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:20,707 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:24,456 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:26,708 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:28,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:37:28,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:37:28,178 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:37:29,554 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:34,711 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:35,351 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:40,970 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:42,713 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:42,722 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:37:43,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:37:43,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:37:43,180 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:37:46,474 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:50,715 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:51,532 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:56,717 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:37:56,941 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:37:58,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:37:58,177 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:37:58,180 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:38:02,514 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:04,720 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:07,517 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:12,725 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:12,726 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:38:12,727 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:13,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:38:13,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:38:13,178 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:38:17,835 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:20,724 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:22,838 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:28,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:38:28,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:38:28,178 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:38:28,499 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:28,727 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:33,948 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:34,728 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:38,949 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:42,725 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:38:42,731 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:43,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:38:43,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:38:43,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:38:44,499 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:50,042 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:50,733 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:38:55,043 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:38:58,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:38:58,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:38:58,178 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:38:58,735 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:00,491 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:04,737 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:06,068 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:11,714 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:12,726 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:39:12,739 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:13,177 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:39:13,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:39:13,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:39:17,561 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:20,744 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:23,228 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:28,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:39:28,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:39:28,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:39:28,577 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:28,746 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:33,577 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:36,749 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:39,092 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:42,728 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:39:43,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:39:43,178 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:39:43,181 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:39:44,497 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:44,751 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:49,498 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:52,753 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:39:55,087 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:39:58,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:39:58,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:39:58,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:40:00,530 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:00,755 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:06,224 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:06,757 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:11,225 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:12,729 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:40:13,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:40:13,178 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:40:13,179 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:40:14,759 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:16,533 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:22,206 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:22,764 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:27,207 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:28,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:40:28,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:40:28,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:40:30,764 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:32,560 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:36,766 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:38,166 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:42,731 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:40:43,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:40:43,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:40:43,179 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:40:43,467 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:44,768 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:48,467 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:52,770 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:40:54,104 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:40:58,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:40:58,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:40:58,181 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:40:59,525 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:41:00,773 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:41:04,526 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:41:06,775 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:41:10,013 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:41:12,733 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:41:13,178 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-01 19:41:13,179 DEBUG   SenderThread:2345462 [sender.py:send_request():405] send_request: stop_status
+2024-04-01 19:41:13,181 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-01 19:41:14,777 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:41:15,587 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:41:20,870 INFO    memory    :2345462 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-04-01 19:41:20,870 DEBUG   SystemMonitor:2345462 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-01 19:41:20,870 DEBUG   SystemMonitor:2345462 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-01 19:41:20,871 DEBUG   SenderThread:2345462 [sender.py:send():378] send: stats
+2024-04-01 19:41:20,875 DEBUG   HandlerThread:2345462 [handler.py:handle_request():146] handle_request: status_report
+2024-04-01 19:41:21,520 WARNING StreamThr :2345462 [internal.py:is_dead():414] Internal process exiting, parent pid 2345151 disappeared
+2024-04-01 19:41:21,520 ERROR   StreamThr :2345462 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-04-01 19:41:21,872 INFO    SenderThread:2345462 [sender.py:finish():1521] shutting down sender
+2024-04-01 19:41:21,875 INFO    HandlerThread:2345462 [handler.py:finish():869] shutting down handler
+2024-04-01 19:41:21,875 INFO    HandlerThread:2345462 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-01 19:41:21,876 INFO    HandlerThread:2345462 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-01 19:41:21,876 INFO    HandlerThread:2345462 [interfaces.py:finish():202] Joined disk monitor
+2024-04-01 19:41:21,876 INFO    HandlerThread:2345462 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-01 19:41:21,876 INFO    HandlerThread:2345462 [interfaces.py:finish():202] Joined memory monitor
+2024-04-01 19:41:21,876 INFO    HandlerThread:2345462 [interfaces.py:finish():202] Joined network monitor
+2024-04-01 19:41:21,875 INFO    WriterThread:2345462 [datastore.py:close():296] close: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/run-xr0z0a9o.wandb
+2024-04-01 19:41:22,779 INFO    Thread-12 :2345462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240401_193111-xr0z0a9o/files/output.log
+2024-04-01 19:41:22,787 INFO    MainThread:2345462 [internal.py:handle_exit():76] Internal process exited

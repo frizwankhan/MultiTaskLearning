@@ -1,0 +1,33 @@
+
+Epoch 0, Loss: 69.6679, step: 0:   0%|                                                                                                                            | 0/496 [00:02<?, ?it/s]
+  0%|                                                                                                                                                             | 0/250 [00:00<?, ?it/s]
+Traceback (most recent call last):                                                                                                                        | 1/250 [00:01<07:58,  1.92s/it]
+  File "main.py", line 65, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 115, in train
+    val_loss = self.val_step()
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 71, in val_step
+    for i, batch in enumerate(pbar):
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1346, in _next_data
+    return self._process_data(data)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1372, in _process_data
+    data.reraise()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/_utils.py", line 722, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/raid/home/rizwank/courses/DLCV/Project/data/cityscapes3d.py", line 152, in __getitem__
+    sample = self.transform(sample)
+  File "/raid/home/rizwank/courses/DLCV/Project/data/cityscapes3d.py", line 186, in transform
+    raise ValueError("Segmentation map contained invalid class values")
+ValueError: Segmentation map contained invalid class values

@@ -1,0 +1,270 @@
+{
+    "os": "Linux-5.4.0-173-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-03-21T09:40:23.995889",
+    "startedAt": "2024-03-21T09:40:23.135704",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "dgx1",
+    "username": "rizwank",
+    "executable": "/raid/home/rizwank/courses/DLCV/Project/env/bin/python3",
+    "cpu_count": 40,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 2674.079499999999,
+        "min": 1200.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2632.418,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2614.642,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2615.945,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2607.088,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2602.357,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2604.8,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2604.555,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2629.772,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3243.48,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2662.514,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3402.105,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2652.503,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2605.089,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2618.52,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2627.303,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2671.564,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2640.949,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2620.595,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2603.84,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2608.027,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2650.776,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2606.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3107.808,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2622.315,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3046.763,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2841.824,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2602.968,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2601.904,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2603.648,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2604.53,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2601.808,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2602.333,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2642.136,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3212.989,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2604.478,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2648.022,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2615.186,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2615.025,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2600.22,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2605.851,
+            "min": 1200.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 438.0733413696289,
+            "used": 218.64608001708984
+        }
+    },
+    "gpu": "Tesla V100-SXM2-32GB",
+    "gpu_count": 8,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        }
+    ],
+    "memory": {
+        "total": 503.77756118774414
+    }
+}

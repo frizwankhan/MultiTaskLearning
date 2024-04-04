@@ -1,0 +1,155 @@
+2024-03-26 14:47:42,684 INFO    StreamThr :1678567 [internal.py:wandb_internal():86] W&B internal server running at pid: 1678567, started at: 2024-03-26 14:47:42.684031
+2024-03-26 14:47:42,698 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: status
+2024-03-26 14:47:42,707 INFO    WriterThread:1678567 [datastore.py:open_for_write():87] open: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/run-s3w6o6zp.wandb
+2024-03-26 14:47:42,707 DEBUG   SenderThread:1678567 [sender.py:send():378] send: header
+2024-03-26 14:47:42,708 DEBUG   SenderThread:1678567 [sender.py:send():378] send: run
+2024-03-26 14:47:43,362 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: check_version
+2024-03-26 14:47:43,369 INFO    SenderThread:1678567 [dir_watcher.py:__init__():211] watching files in: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files
+2024-03-26 14:47:43,369 INFO    SenderThread:1678567 [sender.py:_start_run_threads():1099] run started: s3w6o6zp with start time 1711444662.684156
+2024-03-26 14:47:43,369 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: check_version
+2024-03-26 14:47:43,457 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: run_start
+2024-03-26 14:47:43,470 DEBUG   HandlerThread:1678567 [system_info.py:__init__():26] System info init
+2024-03-26 14:47:43,470 DEBUG   HandlerThread:1678567 [system_info.py:__init__():41] System info init done
+2024-03-26 14:47:43,470 INFO    HandlerThread:1678567 [system_monitor.py:start():194] Starting system monitor
+2024-03-26 14:47:43,474 INFO    SystemMonitor:1678567 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-26 14:47:43,476 INFO    HandlerThread:1678567 [system_monitor.py:probe():214] Collecting system info
+2024-03-26 14:47:43,480 INFO    SystemMonitor:1678567 [interfaces.py:start():190] Started cpu monitoring
+2024-03-26 14:47:43,484 INFO    SystemMonitor:1678567 [interfaces.py:start():190] Started disk monitoring
+2024-03-26 14:47:43,489 INFO    SystemMonitor:1678567 [interfaces.py:start():190] Started gpu monitoring
+2024-03-26 14:47:43,496 INFO    SystemMonitor:1678567 [interfaces.py:start():190] Started memory monitoring
+2024-03-26 14:47:43,503 INFO    SystemMonitor:1678567 [interfaces.py:start():190] Started network monitoring
+2024-03-26 14:47:43,537 DEBUG   HandlerThread:1678567 [system_info.py:probe():150] Probing system
+2024-03-26 14:47:43,546 DEBUG   HandlerThread:1678567 [gitlib.py:_init_repo():56] git repository is invalid
+2024-03-26 14:47:43,547 DEBUG   HandlerThread:1678567 [system_info.py:probe():198] Probing system done
+2024-03-26 14:47:43,547 DEBUG   HandlerThread:1678567 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-173-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-26T09:17:43.537949', 'startedAt': '2024-03-26T09:17:42.670910', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'dgx1', 'username': 'rizwank', 'executable': '/raid/home/rizwank/courses/DLCV/Project/env/bin/python3', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2683.0807000000004, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2693.869, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.87, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.139, 'min': 1200.0, 'max': 3600.0}, {'current': 2605.997, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.152, 'min': 1200.0, 'max': 3600.0}, {'current': 2605.984, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.16, 'min': 1200.0, 'max': 3600.0}, {'current': 2608.891, 'min': 1200.0, 'max': 3600.0}, {'current': 2605.787, 'min': 1200.0, 'max': 3600.0}, {'current': 2605.943, 'min': 1200.0, 'max': 3600.0}, {'current': 2610.844, 'min': 1200.0, 'max': 3600.0}, {'current': 2608.921, 'min': 1200.0, 'max': 3600.0}, {'current': 2608.922, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.167, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.146, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.161, 'min': 1200.0, 'max': 3600.0}, {'current': 2605.855, 'min': 1200.0, 'max': 3600.0}, {'current': 2605.854, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.133, 'min': 1200.0, 'max': 3600.0}, {'current': 2609.16, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.839, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.821, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.292, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.934, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.761, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.871, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.728, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.867, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.696, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.178, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.641, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.971, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.616, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.786, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.123, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.261, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.592, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.723, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.897, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.039, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 438.0733413696289, 'used': 235.43181991577148}}, 'gpu': 'Tesla V100-SXM2-32GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}], 'memory': {'total': 503.77756118774414}}
+2024-03-26 14:47:43,547 INFO    HandlerThread:1678567 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-26 14:47:43,547 INFO    HandlerThread:1678567 [system_monitor.py:probe():227] Publishing system info
+2024-03-26 14:47:43,548 INFO    HandlerThread:1678567 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-26 14:47:43,551 DEBUG   SenderThread:1678567 [sender.py:send():378] send: files
+2024-03-26 14:47:43,551 INFO    SenderThread:1678567 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-26 14:47:43,718 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-26 14:47:43,718 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: python_packages
+2024-03-26 14:47:43,718 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 14:47:43,719 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 14:47:43,727 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 14:47:44,075 DEBUG   SenderThread:1678567 [sender.py:send():378] send: telemetry
+2024-03-26 14:47:44,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/requirements.txt
+2024-03-26 14:47:44,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/wandb-metadata.json
+2024-03-26 14:47:44,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log
+2024-03-26 14:47:44,559 INFO    wandb-upload_0:1678567 [upload_job.py:push():131] Uploaded file /tmp/tmpsettaum_wandb/vp4w636h-wandb-metadata.json
+2024-03-26 14:47:46,366 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log
+2024-03-26 14:47:46,466 DEBUG   SenderThread:1678567 [sender.py:send():378] send: exit
+2024-03-26 14:47:46,466 INFO    SenderThread:1678567 [sender.py:send_exit():585] handling exit code: 1
+2024-03-26 14:47:46,466 INFO    SenderThread:1678567 [sender.py:send_exit():587] handling runtime: 3
+2024-03-26 14:47:46,467 INFO    SenderThread:1678567 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-26 14:47:46,467 INFO    SenderThread:1678567 [sender.py:send_exit():593] send defer
+2024-03-26 14:47:46,467 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:46,467 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-26 14:47:46,467 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:46,467 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-26 14:47:46,467 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 1
+2024-03-26 14:47:46,468 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:46,468 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-26 14:47:46,468 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:46,468 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-26 14:47:46,468 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 2
+2024-03-26 14:47:46,468 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:46,468 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-26 14:47:46,468 INFO    HandlerThread:1678567 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-26 14:47:46,469 DEBUG   SystemMonitor:1678567 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-26 14:47:46,469 DEBUG   SystemMonitor:1678567 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-26 14:47:46,469 DEBUG   SystemMonitor:1678567 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-26 14:47:46,469 INFO    HandlerThread:1678567 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-26 14:47:46,470 INFO    HandlerThread:1678567 [interfaces.py:finish():202] Joined disk monitor
+2024-03-26 14:47:47,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log
+2024-03-26 14:47:47,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/wandb-summary.json
+2024-03-26 14:47:48,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log
+2024-03-26 14:47:48,497 INFO    HandlerThread:1678567 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-26 14:47:48,497 INFO    HandlerThread:1678567 [interfaces.py:finish():202] Joined memory monitor
+2024-03-26 14:47:48,497 INFO    HandlerThread:1678567 [interfaces.py:finish():202] Joined network monitor
+2024-03-26 14:47:48,498 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-26 14:47:48,498 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 14:47:48,498 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:48,498 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-26 14:47:48,499 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 3
+2024-03-26 14:47:48,499 DEBUG   SenderThread:1678567 [sender.py:send():378] send: stats
+2024-03-26 14:47:48,499 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:48,499 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: poll_exit
+2024-03-26 14:47:48,499 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-26 14:47:48,500 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:48,500 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-26 14:47:48,500 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 4
+2024-03-26 14:47:48,500 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:48,500 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-26 14:47:48,501 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:48,501 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-26 14:47:48,501 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 5
+2024-03-26 14:47:48,501 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:48,501 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-26 14:47:48,501 DEBUG   SenderThread:1678567 [sender.py:send():378] send: summary
+2024-03-26 14:47:48,502 INFO    SenderThread:1678567 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-26 14:47:48,502 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:48,502 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-26 14:47:48,502 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 6
+2024-03-26 14:47:48,502 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:48,503 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-26 14:47:48,503 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:48,503 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-26 14:47:48,507 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 14:47:48,779 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 7
+2024-03-26 14:47:48,779 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:48,779 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-26 14:47:48,780 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:48,780 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-26 14:47:49,367 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/wandb-summary.json
+2024-03-26 14:47:49,368 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/config.yaml
+2024-03-26 14:47:49,465 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-26 14:47:51,148 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 8
+2024-03-26 14:47:51,148 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: poll_exit
+2024-03-26 14:47:51,148 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:51,149 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-26 14:47:51,149 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:51,149 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-26 14:47:51,149 INFO    SenderThread:1678567 [job_builder.py:build():298] Attempting to build job artifact
+2024-03-26 14:47:51,150 INFO    SenderThread:1678567 [job_builder.py:_get_source_type():439] no source found
+2024-03-26 14:47:51,150 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 9
+2024-03-26 14:47:51,150 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:51,150 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-26 14:47:51,151 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:51,151 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-26 14:47:51,151 INFO    SenderThread:1678567 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-26 14:47:51,368 INFO    Thread-12 :1678567 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log
+2024-03-26 14:47:51,369 INFO    SenderThread:1678567 [dir_watcher.py:finish():388] scan: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files
+2024-03-26 14:47:51,369 INFO    SenderThread:1678567 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log output.log
+2024-03-26 14:47:51,369 INFO    SenderThread:1678567 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/wandb-metadata.json wandb-metadata.json
+2024-03-26 14:47:51,372 INFO    SenderThread:1678567 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/requirements.txt requirements.txt
+2024-03-26 14:47:51,372 INFO    SenderThread:1678567 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/wandb-summary.json wandb-summary.json
+2024-03-26 14:47:51,373 INFO    SenderThread:1678567 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/config.yaml config.yaml
+2024-03-26 14:47:51,377 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 10
+2024-03-26 14:47:51,377 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:51,377 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-26 14:47:51,378 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:51,380 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-26 14:47:51,380 INFO    SenderThread:1678567 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-26 14:47:51,466 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-26 14:47:51,466 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: poll_exit
+2024-03-26 14:47:51,707 WARNING StreamThr :1678567 [internal.py:is_dead():414] Internal process exiting, parent pid 1678432 disappeared
+2024-03-26 14:47:51,707 ERROR   StreamThr :1678567 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-03-26 14:47:52,001 INFO    wandb-upload_1:1678567 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/requirements.txt
+2024-03-26 14:47:52,102 INFO    wandb-upload_0:1678567 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/output.log
+2024-03-26 14:47:52,154 INFO    wandb-upload_2:1678567 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/wandb-summary.json
+2024-03-26 14:47:52,222 INFO    wandb-upload_3:1678567 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/files/config.yaml
+2024-03-26 14:47:52,422 INFO    Thread-11 :1678567 [sender.py:transition_state():613] send defer: 11
+2024-03-26 14:47:52,423 DEBUG   HandlerThread:1678567 [handler.py:handle_request():146] handle_request: defer
+2024-03-26 14:47:52,423 INFO    HandlerThread:1678567 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-26 14:47:52,423 INFO    HandlerThread:1678567 [handler.py:finish():869] shutting down handler
+2024-03-26 14:47:52,423 INFO    WriterThread:1678567 [datastore.py:close():296] close: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_144742-s3w6o6zp/run-s3w6o6zp.wandb
+2024-03-26 14:47:52,424 DEBUG   SenderThread:1678567 [sender.py:send_request():405] send_request: defer
+2024-03-26 14:47:52,424 INFO    SenderThread:1678567 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-26 14:47:52,424 INFO    SenderThread:1678567 [file_pusher.py:join():178] waiting for file pusher
+2024-03-26 14:47:52,424 INFO    SenderThread:1678567 [sender.py:transition_state():613] send defer: 12
+2024-03-26 14:47:52,425 INFO    SenderThread:1678567 [sender.py:finish():1521] shutting down sender
+2024-03-26 14:47:52,425 INFO    SenderThread:1678567 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-26 14:47:52,425 INFO    SenderThread:1678567 [file_pusher.py:join():178] waiting for file pusher
+2024-03-26 14:47:52,425 INFO    SenderThread:1678567 [file_stream.py:finish():595] file stream finish called
+2024-03-26 14:47:52,691 INFO    SenderThread:1678567 [file_stream.py:finish():599] file stream finish is done

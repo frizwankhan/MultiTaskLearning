@@ -1,0 +1,17 @@
+
+  0%|                                                                                                                                                             | 0/496 [00:00<?, ?it/s]/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:271: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+Epoch 0, Loss: 332.4781, step: 0:   0%|                                                                                                                           | 0/496 [00:03<?, ?it/s]
+  0%|                                                                                                                                                             | 0/250 [00:00<?, ?it/s]
+Traceback (most recent call last):                                                                                                                                | 0/250 [00:00<?, ?it/s]
+  File "main.py", line 65, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 115, in train
+    val_loss = self.val_step()
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 81, in val_step
+    {t: get_output(output[t], t) for t in self.tasks},
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 81, in <dictcomp>
+    {t: get_output(output[t], t) for t in self.tasks},
+  File "/raid/home/rizwank/courses/DLCV/Project/common_utils.py", line 210, in get_output
+    raise ValueError('Select one of the valid tasks')
+ValueError: Select one of the valid tasks

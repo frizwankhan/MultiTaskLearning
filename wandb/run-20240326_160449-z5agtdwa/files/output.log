@@ -1,0 +1,203 @@
+
+  0%|                                                                                                                                                                              | 0/186 [00:00<?, ?it/s]
+memory occupied before training 1.5308036804199219
+memory occupied before train_setp 1.5308036804199219
+memory occupied after train_setp 1.5601005554199219
+memory occupied  5.920274257659912
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  6.038564205169678
+memory occupied  0.0
+memory occupied  0.0
+decoder out 3.0 torch.Size([4, 128, 1536]) 4
+memory occupied  6.035607814788818
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  6.054162502288818
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  6.259344577789307
+memory occupied  0.0
+memory occupied  0.0
+decoder out 6.0 torch.Size([4, 512, 768]) 4
+memory occupied  6.253458499908447
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  6.288614749908447
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  6.734300136566162
+memory occupied  0.0
+memory occupied  0.0
+decoder out 12.0 torch.Size([4, 2048, 384]) 4
+memory occupied  6.722514629364014
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  6.792827129364014
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  7.684920787811279
+memory occupied  0.0
+memory occupied  0.0
+decoder out 24.0 torch.Size([4, 8192, 192]) 4
+memory occupied  7.66123628616333
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  7.70811128616333
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  7.816635608673096
+memory occupied  0.0
+memory occupied  0.0
+decoder out 3.0 torch.Size([4, 128, 1536]) 4
+memory occupied  7.813679218292236
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  7.831257343292236
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  8.036439418792725
+memory occupied  0.0
+memory occupied  0.0
+decoder out 6.0 torch.Size([4, 512, 768]) 4
+memory occupied  8.030553340911865
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  8.065709590911865
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  8.51139497756958
+memory occupied  0.0
+Epoch 0, Loss: 72.9415, step: 0:   0%|                                                                                                                                             | 0/186 [00:03<?, ?it/s]
+  0%|                                                                                                                                                                              | 0/125 [00:00<?, ?it/s]
+decoder out 12.0 torch.Size([4, 2048, 384]) 4
+memory occupied  8.499609470367432
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  8.569921970367432
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  9.462015628814697
+memory occupied  0.0
+memory occupied  0.0
+decoder out 24.0 torch.Size([4, 8192, 192]) 4
+memory occupied  9.438331127166748
+memory occupied  0.0
+memory occupied  0.0
+
+  1%|█▎                                                                                                                                                                    | 1/125 [00:02<04:44,  2.30s/it]
+memory occupied  4.011551856994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.022316932678223
+memory occupied  0.0
+memory occupied  0.0
+decoder out 3.0 torch.Size([4, 128, 1536]) 4
+memory occupied  4.015458106994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.030106544494629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.043789863586426
+memory occupied  0.0
+memory occupied  0.0
+decoder out 6.0 torch.Size([4, 512, 768]) 4
+memory occupied  4.030106544494629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.046708106994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.070151329040527
+memory occupied  0.0
+memory occupied  0.0
+decoder out 12.0 torch.Size([4, 2048, 384]) 4
+memory occupied  4.046708106994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.081864356994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.128742218017578
+memory occupied  0.0
+memory occupied  0.0
+decoder out 24.0 torch.Size([4, 8192, 192]) 4
+memory occupied  4.081864356994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.058426856994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.069191932678223
+memory occupied  0.0
+memory occupied  0.0
+decoder out 3.0 torch.Size([4, 128, 1536]) 4
+memory occupied  4.062333106994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.076981544494629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.090664863586426
+memory occupied  0.0
+memory occupied  0.0
+decoder out 6.0 torch.Size([4, 512, 768]) 4
+memory occupied  4.076981544494629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.093583106994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.117026329040527
+memory occupied  0.0
+memory occupied  0.0
+decoder out 12.0 torch.Size([4, 2048, 384]) 4
+memory occupied  4.093583106994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.128739356994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.175617218017578
+memory occupied  0.0
+memory occupied  0.0
+decoder out 24.0 torch.Size([4, 8192, 192]) 4
+memory occupied  4.128739356994629
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.0496392250061035
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.060404300689697
+memory occupied  0.0
+memory occupied  0.0
+decoder out 3.0 torch.Size([4, 128, 1536]) 4
+memory occupied  4.0535454750061035
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.0681939125061035
+memory occupied  0.0
+memory occupied  0.0
+memory occupied  4.0818772315979
+memory occupied  0.0
+Traceback (most recent call last):                                                                                                                                         | 1/125 [00:02<04:44,  2.30s/it]
+  File "main.py", line 68, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 121, in train
+    val_loss = self.val_step()
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 79, in val_step
+    output = self.model.module(images)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 228, in forward
+    x = self.swin_encoder_decoder(x)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 132, in forward
+    gc.collect()
+KeyboardInterrupt

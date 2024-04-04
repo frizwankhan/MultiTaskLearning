@@ -1,0 +1,15 @@
+
+Epoch 0, Loss: 71.9747, step: 0:   0%|                                                                                                                      | 0/496 [00:03<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 64, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 115, in train
+    val_loss = self.val_step()
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 63, in val_step
+    performence_meter = PerformanceMeter(self.config, self.tasks)
+  File "/raid/home/rizwank/courses/DLCV/Project/evaluation/eval_utils.py", line 12, in __init__
+    self.meters = {t: get_single_task_meter(config, t) for t in self.tasks}
+  File "/raid/home/rizwank/courses/DLCV/Project/evaluation/eval_utils.py", line 12, in <dictcomp>
+    self.meters = {t: get_single_task_meter(config, t) for t in self.tasks}
+  File "/raid/home/rizwank/courses/DLCV/Project/evaluation/eval_utils.py", line 34, in get_single_task_meter
+    return SemsegMeter(ignore_idx=config.ignore_index, database=config.database)
+AttributeError: 'CityscapesConfig' object has no attribute 'database'

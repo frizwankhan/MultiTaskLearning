@@ -1,0 +1,90 @@
+
+Epoch 0, Loss: 23.7738, step: 0:   0%|                                                                                 | 0/125 [00:04<?, ?it/s]
+  0%|                                                                                                                  | 0/157 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+  6%|██████▋                                                                                                  | 10/157 [00:23<04:38,  1.89s/it]
+ Edge Detection Evaluation
+Edge Detection Loss 0.055
+Human Parts mIoU: 1.5378
+background     6.1359
+head           0.0000
+torso          0.0373
+uarm           3.6655
+larm           0.0000
+uleg           0.9257
+lleg           0.0000
+Semantic Segmentation mIoU: 0.0475
+background          0.0000
+aeroplane           0.0000
+bicycle             0.0000
+bird                0.1274
+boat                0.8616
+bottle              0.0089
+bus                 0.0000
+car                 0.0000
+cat                 0.0000
+chair               0.0000
+cow                 0.0000
+diningtable         0.0000
+dog                 0.0000
+horse               0.0000
+motorbike           0.0000
+person              0.0000
+pottedplant         0.0000
+sheep               0.0000
+sofa                0.0000
+train               0.0000
+tvmonitor           0.0000
+Validation Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0, Loss: 22.7023, step: 65:   0%|                                                                                | 0/125 [01:57<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 59, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 108, in train
+    loss, loss_dict = self.train_step(batch)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 45, in train_step
+    loss_dict["total"].backward()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

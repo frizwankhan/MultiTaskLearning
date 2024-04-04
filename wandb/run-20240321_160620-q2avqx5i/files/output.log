@@ -1,0 +1,9 @@
+
+  0%|                                                                                                                                           | 0/157 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 58, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 94, in train
+    torch.distirbuted.barrier()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/__init__.py", line 1938, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'torch' has no attribute 'distirbuted'

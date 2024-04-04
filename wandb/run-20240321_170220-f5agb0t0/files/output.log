@@ -1,0 +1,157 @@
+
+Epoch 0, Loss: 27.4688:   0%|                                                                                          | 0/125 [00:04<?, ?it/s]
+  0%|                                                                                                                  | 0/157 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+  6%|██████▋                                                                                                  | 10/157 [00:24<04:57,  2.02s/it]
+ Edge Detection Evaluation
+Edge Detection Loss 0.055
+Human Parts mIoU: 4.5766
+background     29.1142
+head           0.0000
+torso          0.0000
+uarm           0.0000
+larm           2.8414
+uleg           0.0000
+lleg           0.0805
+Semantic Segmentation mIoU: 0.1201
+background          0.0000
+aeroplane           0.0000
+bicycle             0.4808
+bird                0.0000
+boat                0.9423
+bottle              0.0000
+bus                 0.0000
+car                 0.0068
+cat                 0.0776
+chair               0.0000
+cow                 0.0000
+diningtable         0.0000
+dog                 0.0000
+horse               0.0000
+motorbike           0.0014
+person              0.0000
+pottedplant         0.0000
+sheep               0.4106
+sofa                0.5950
+train               0.0069
+tvmonitor           0.0000
+Validation Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0, Loss: 26.0019:   0%|                                                                                          | 0/125 [02:33<?, ?it/s]
+Epoch 0, Loss: 26.3860:   0%|                                                                                          | 0/125 [02:34<?, ?it/s]
+
+
+
+
+
+
+
+
+
+Epoch 0, Loss: 26.9549:   0%|                                                                                          | 0/125 [03:06<?, ?it/s]
+ Edge Detection Evaluation
+Edge Detection Loss 0.055
+Human Parts mIoU: 5.3263
+background     34.4210
+head           0.0000
+torso          0.0000
+uarm           0.0000
+larm           2.8370
+uleg           0.0000
+lleg           0.0264
+Semantic Segmentation mIoU: 0.1236
+background          0.0000
+aeroplane           0.0000
+bicycle             0.4598
+bird                0.0000
+boat                0.8023
+bottle              0.0000
+bus                 0.0000
+car                 0.0101
+cat                 0.0657
+chair               0.0000
+cow                 0.0000
+diningtable         0.0000
+dog                 0.0000
+horse               0.0000
+motorbike           0.0075
+person              0.0000
+pottedplant         0.0000
+sheep               0.5256
+sofa                0.7176
+train               0.0069
+tvmonitor           0.0000
+Validation Done
+
+Epoch 0, Loss: 25.8350:   0%|                                                                                          | 0/125 [03:09<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 58, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 106, in train
+    loss, loss_dict = self.train_step(batch)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 44, in train_step
+    loss_dict["total"].backward()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

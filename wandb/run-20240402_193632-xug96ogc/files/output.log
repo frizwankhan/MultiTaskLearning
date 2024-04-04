@@ -1,0 +1,32 @@
+
+Epoch 0, Loss: 73.5731, step: 0:   0%|                                                                                                       | 0/625 [00:04<?, ?it/s]
+  0%|                                                                                                                                        | 0/157 [00:00<?, ?it/s]
+Epoch 0, Loss: 73.5731, step: 0:   0%|                                                                                                       | 0/625 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 114, in train
+    val_loss = self.val_step()
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 68, in val_step
+    for i, batch in enumerate(pbar):
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1329, in _next_data
+    idx, data = self._get_data()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1295, in _get_data
+    success, data = self._try_get_data()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1133, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 107, in get
+    if not self._poll(timeout):
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

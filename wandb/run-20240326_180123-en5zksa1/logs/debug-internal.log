@@ -1,0 +1,99 @@
+2024-03-26 18:01:23,354 INFO    StreamThr :39473 [internal.py:wandb_internal():86] W&B internal server running at pid: 39473, started at: 2024-03-26 18:01:23.353892
+2024-03-26 18:01:23,355 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status
+2024-03-26 18:01:23,360 INFO    WriterThread:39473 [datastore.py:open_for_write():87] open: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/run-en5zksa1.wandb
+2024-03-26 18:01:23,360 DEBUG   SenderThread:39473 [sender.py:send():378] send: header
+2024-03-26 18:01:23,361 DEBUG   SenderThread:39473 [sender.py:send():378] send: run
+2024-03-26 18:01:24,010 INFO    SenderThread:39473 [dir_watcher.py:__init__():211] watching files in: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files
+2024-03-26 18:01:24,010 INFO    SenderThread:39473 [sender.py:_start_run_threads():1099] run started: en5zksa1 with start time 1711456283.354598
+2024-03-26 18:01:24,019 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: check_version
+2024-03-26 18:01:24,019 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: check_version
+2024-03-26 18:01:24,139 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: run_start
+2024-03-26 18:01:24,151 DEBUG   HandlerThread:39473 [system_info.py:__init__():26] System info init
+2024-03-26 18:01:24,151 DEBUG   HandlerThread:39473 [system_info.py:__init__():41] System info init done
+2024-03-26 18:01:24,151 INFO    HandlerThread:39473 [system_monitor.py:start():194] Starting system monitor
+2024-03-26 18:01:24,151 INFO    SystemMonitor:39473 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-26 18:01:24,152 INFO    HandlerThread:39473 [system_monitor.py:probe():214] Collecting system info
+2024-03-26 18:01:24,152 INFO    SystemMonitor:39473 [interfaces.py:start():190] Started cpu monitoring
+2024-03-26 18:01:24,153 INFO    SystemMonitor:39473 [interfaces.py:start():190] Started disk monitoring
+2024-03-26 18:01:24,153 INFO    SystemMonitor:39473 [interfaces.py:start():190] Started gpu monitoring
+2024-03-26 18:01:24,154 INFO    SystemMonitor:39473 [interfaces.py:start():190] Started memory monitoring
+2024-03-26 18:01:24,155 INFO    SystemMonitor:39473 [interfaces.py:start():190] Started network monitoring
+2024-03-26 18:01:24,199 DEBUG   HandlerThread:39473 [system_info.py:probe():150] Probing system
+2024-03-26 18:01:24,202 DEBUG   HandlerThread:39473 [gitlib.py:_init_repo():56] git repository is invalid
+2024-03-26 18:01:24,202 DEBUG   HandlerThread:39473 [system_info.py:probe():198] Probing system done
+2024-03-26 18:01:24,202 DEBUG   HandlerThread:39473 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-174-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-26T12:31:24.199100', 'startedAt': '2024-03-26T12:31:23.348341', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'dgx1', 'username': 'rizwank', 'executable': '/raid/home/rizwank/courses/DLCV/Project/env/bin/python3', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2991.4293499999994, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2896.751, 'min': 1200.0, 'max': 3600.0}, {'current': 2941.122, 'min': 1200.0, 'max': 3600.0}, {'current': 3046.802, 'min': 1200.0, 'max': 3600.0}, {'current': 2875.748, 'min': 1200.0, 'max': 3600.0}, {'current': 2829.763, 'min': 1200.0, 'max': 3600.0}, {'current': 2784.441, 'min': 1200.0, 'max': 3600.0}, {'current': 3285.403, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.773, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.1, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.35, 'min': 1200.0, 'max': 3600.0}, {'current': 3119.536, 'min': 1200.0, 'max': 3600.0}, {'current': 3229.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2967.886, 'min': 1200.0, 'max': 3600.0}, {'current': 3110.127, 'min': 1200.0, 'max': 3600.0}, {'current': 2814.51, 'min': 1200.0, 'max': 3600.0}, {'current': 2946.856, 'min': 1200.0, 'max': 3600.0}, {'current': 2888.151, 'min': 1200.0, 'max': 3600.0}, {'current': 2980.327, 'min': 1200.0, 'max': 3600.0}, {'current': 2961.461, 'min': 1200.0, 'max': 3600.0}, {'current': 3228.603, 'min': 1200.0, 'max': 3600.0}, {'current': 3322.847, 'min': 1200.0, 'max': 3600.0}, {'current': 3368.614, 'min': 1200.0, 'max': 3600.0}, {'current': 3301.208, 'min': 1200.0, 'max': 3600.0}, {'current': 3077.037, 'min': 1200.0, 'max': 3600.0}, {'current': 2964.057, 'min': 1200.0, 'max': 3600.0}, {'current': 2883.312, 'min': 1200.0, 'max': 3600.0}, {'current': 3217.325, 'min': 1200.0, 'max': 3600.0}, {'current': 2703.396, 'min': 1200.0, 'max': 3600.0}, {'current': 2704.325, 'min': 1200.0, 'max': 3600.0}, {'current': 2714.929, 'min': 1200.0, 'max': 3600.0}, {'current': 2729.267, 'min': 1200.0, 'max': 3600.0}, {'current': 3298.73, 'min': 1200.0, 'max': 3600.0}, {'current': 3536.882, 'min': 1200.0, 'max': 3600.0}, {'current': 2772.981, 'min': 1200.0, 'max': 3600.0}, {'current': 2789.894, 'min': 1200.0, 'max': 3600.0}, {'current': 2821.821, 'min': 1200.0, 'max': 3600.0}, {'current': 3255.509, 'min': 1200.0, 'max': 3600.0}, {'current': 2820.248, 'min': 1200.0, 'max': 3600.0}, {'current': 2853.469, 'min': 1200.0, 'max': 3600.0}, {'current': 3532.613, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 438.0733413696289, 'used': 234.27642822265625}}, 'gpu': 'Tesla V100-SXM2-32GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}], 'memory': {'total': 503.77757263183594}}
+2024-03-26 18:01:24,202 INFO    HandlerThread:39473 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-26 18:01:24,202 INFO    HandlerThread:39473 [system_monitor.py:probe():227] Publishing system info
+2024-03-26 18:01:24,203 INFO    HandlerThread:39473 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-26 18:01:24,206 DEBUG   SenderThread:39473 [sender.py:send():378] send: files
+2024-03-26 18:01:24,206 INFO    SenderThread:39473 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-26 18:01:24,285 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-26 18:01:24,285 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: python_packages
+2024-03-26 18:01:24,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 18:01:24,286 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 18:01:24,291 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 18:01:24,643 DEBUG   SenderThread:39473 [sender.py:send():378] send: telemetry
+2024-03-26 18:01:25,012 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:25,012 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/requirements.txt
+2024-03-26 18:01:25,012 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/wandb-metadata.json
+2024-03-26 18:01:25,177 INFO    wandb-upload_0:39473 [upload_job.py:push():131] Uploaded file /tmp/tmpoucgha5qwandb/02kynki1-wandb-metadata.json
+2024-03-26 18:01:27,011 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:28,644 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:01:28,745 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-26 18:01:28,745 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-26 18:01:28,745 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-26 18:01:28,745 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-26 18:01:31,013 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:33,753 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:01:39,015 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:39,041 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:01:39,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 18:01:39,287 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 18:01:39,287 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 18:01:43,016 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:44,456 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:01:49,018 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:50,198 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:01:54,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 18:01:54,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 18:01:54,287 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 18:01:55,020 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:01:55,601 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:01:56,020 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/config.yaml
+2024-03-26 18:02:01,022 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:01,564 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:07,024 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:07,211 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:09,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 18:02:09,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 18:02:09,287 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 18:02:12,892 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:13,026 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:17,027 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:18,629 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:23,029 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:24,155 DEBUG   SystemMonitor:39473 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-26 18:02:24,157 DEBUG   SenderThread:39473 [sender.py:send():378] send: stats
+2024-03-26 18:02:24,158 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:24,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 18:02:24,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 18:02:24,287 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 18:02:29,031 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:29,870 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:35,033 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:35,550 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:39,286 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-26 18:02:39,287 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-26 18:02:39,287 DEBUG   SenderThread:39473 [sender.py:send_request():405] send_request: stop_status
+2024-03-26 18:02:40,554 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:41,035 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:45,912 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:47,037 INFO    Thread-12 :39473 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240326_180123-en5zksa1/files/output.log
+2024-03-26 18:02:50,193 INFO    memory    :39473 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-03-26 18:02:50,194 DEBUG   SystemMonitor:39473 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-26 18:02:50,194 DEBUG   SystemMonitor:39473 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-26 18:02:50,196 DEBUG   SenderThread:39473 [sender.py:send():378] send: stats
+2024-03-26 18:02:51,197 DEBUG   HandlerThread:39473 [handler.py:handle_request():146] handle_request: status_report
+2024-03-26 18:02:52,158 INFO    MainThread:39473 [internal.py:handle_exit():76] Internal process exited
+2024-03-26 18:02:52,452 WARNING StreamThr :39473 [internal.py:is_dead():414] Internal process exiting, parent pid 39389 disappeared
+2024-03-26 18:02:52,452 ERROR   StreamThr :39473 [internal.py:wandb_internal():152] Internal process shutdown.

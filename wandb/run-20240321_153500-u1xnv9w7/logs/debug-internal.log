@@ -1,0 +1,840 @@
+2024-03-21 15:35:00,848 INFO    StreamThr :1786341 [internal.py:wandb_internal():86] W&B internal server running at pid: 1786341, started at: 2024-03-21 15:35:00.847314
+2024-03-21 15:35:00,852 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status
+2024-03-21 15:35:00,853 INFO    WriterThread:1786341 [datastore.py:open_for_write():87] open: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/run-u1xnv9w7.wandb
+2024-03-21 15:35:00,854 DEBUG   SenderThread:1786341 [sender.py:send():378] send: header
+2024-03-21 15:35:00,854 DEBUG   SenderThread:1786341 [sender.py:send():378] send: run
+2024-03-21 15:35:01,491 INFO    SenderThread:1786341 [dir_watcher.py:__init__():211] watching files in: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files
+2024-03-21 15:35:01,491 INFO    SenderThread:1786341 [sender.py:_start_run_threads():1099] run started: u1xnv9w7 with start time 1711015500.84629
+2024-03-21 15:35:01,508 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: check_version
+2024-03-21 15:35:01,509 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: check_version
+2024-03-21 15:35:01,634 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: run_start
+2024-03-21 15:35:01,650 DEBUG   HandlerThread:1786341 [system_info.py:__init__():26] System info init
+2024-03-21 15:35:01,650 DEBUG   HandlerThread:1786341 [system_info.py:__init__():41] System info init done
+2024-03-21 15:35:01,650 INFO    HandlerThread:1786341 [system_monitor.py:start():194] Starting system monitor
+2024-03-21 15:35:01,650 INFO    SystemMonitor:1786341 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-21 15:35:01,651 INFO    HandlerThread:1786341 [system_monitor.py:probe():214] Collecting system info
+2024-03-21 15:35:01,651 INFO    SystemMonitor:1786341 [interfaces.py:start():190] Started cpu monitoring
+2024-03-21 15:35:01,652 INFO    SystemMonitor:1786341 [interfaces.py:start():190] Started disk monitoring
+2024-03-21 15:35:01,654 INFO    SystemMonitor:1786341 [interfaces.py:start():190] Started gpu monitoring
+2024-03-21 15:35:01,654 INFO    SystemMonitor:1786341 [interfaces.py:start():190] Started memory monitoring
+2024-03-21 15:35:01,655 INFO    SystemMonitor:1786341 [interfaces.py:start():190] Started network monitoring
+2024-03-21 15:35:01,703 DEBUG   HandlerThread:1786341 [system_info.py:probe():150] Probing system
+2024-03-21 15:35:01,708 DEBUG   HandlerThread:1786341 [gitlib.py:_init_repo():56] git repository is invalid
+2024-03-21 15:35:01,708 DEBUG   HandlerThread:1786341 [system_info.py:probe():198] Probing system done
+2024-03-21 15:35:01,708 DEBUG   HandlerThread:1786341 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-173-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-21T10:05:01.703219', 'startedAt': '2024-03-21T10:05:00.838500', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'host': 'dgx1', 'username': 'rizwank', 'executable': '/raid/home/rizwank/courses/DLCV/Project/env/bin/python3', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2636.3917750000005, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2598.569, 'min': 1200.0, 'max': 3600.0}, {'current': 2595.963, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.231, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.148, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.245, 'min': 1200.0, 'max': 3600.0}, {'current': 2600.529, 'min': 1200.0, 'max': 3600.0}, {'current': 2995.584, 'min': 1200.0, 'max': 3600.0}, {'current': 2604.857, 'min': 1200.0, 'max': 3600.0}, {'current': 2598.959, 'min': 1200.0, 'max': 3600.0}, {'current': 2955.983, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.662, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.243, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.224, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.43, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.995, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.23, 'min': 1200.0, 'max': 3600.0}, {'current': 2598.401, 'min': 1200.0, 'max': 3600.0}, {'current': 2608.911, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.568, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.542, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.556, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.915, 'min': 1200.0, 'max': 3600.0}, {'current': 2912.517, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.856, 'min': 1200.0, 'max': 3600.0}, {'current': 2598.506, 'min': 1200.0, 'max': 3600.0}, {'current': 2612.759, 'min': 1200.0, 'max': 3600.0}, {'current': 2819.506, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.855, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.424, 'min': 1200.0, 'max': 3600.0}, {'current': 2622.562, 'min': 1200.0, 'max': 3600.0}, {'current': 2603.428, 'min': 1200.0, 'max': 3600.0}, {'current': 2597.793, 'min': 1200.0, 'max': 3600.0}, {'current': 2602.491, 'min': 1200.0, 'max': 3600.0}, {'current': 2802.26, 'min': 1200.0, 'max': 3600.0}, {'current': 2598.951, 'min': 1200.0, 'max': 3600.0}, {'current': 2598.154, 'min': 1200.0, 'max': 3600.0}, {'current': 2601.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2872.213, 'min': 1200.0, 'max': 3600.0}, {'current': 2604.226, 'min': 1200.0, 'max': 3600.0}, {'current': 2596.728, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 438.0733413696289, 'used': 218.65689849853516}}, 'gpu': 'Tesla V100-SXM2-32GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}], 'memory': {'total': 503.77756118774414}}
+2024-03-21 15:35:01,709 INFO    HandlerThread:1786341 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-21 15:35:01,709 INFO    HandlerThread:1786341 [system_monitor.py:probe():227] Publishing system info
+2024-03-21 15:35:01,710 INFO    HandlerThread:1786341 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-21 15:35:01,713 DEBUG   SenderThread:1786341 [sender.py:send():378] send: files
+2024-03-21 15:35:01,713 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-21 15:35:01,810 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-21 15:35:01,810 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: python_packages
+2024-03-21 15:35:01,811 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 15:35:01,811 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 15:35:01,814 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 15:35:02,220 DEBUG   SenderThread:1786341 [sender.py:send():378] send: telemetry
+2024-03-21 15:35:02,492 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/output.log
+2024-03-21 15:35:02,492 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/requirements.txt
+2024-03-21 15:35:02,493 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-metadata.json
+2024-03-21 15:35:02,760 INFO    wandb-upload_0:1786341 [upload_job.py:push():131] Uploaded file /tmp/tmpuyqqqzmcwandb/4tjn750v-wandb-metadata.json
+2024-03-21 15:35:04,491 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/output.log
+2024-03-21 15:35:05,989 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:05,990 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:05,990 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:05,990 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:05,990 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:05,990 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:06,222 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:07,016 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,018 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:07,018 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:07,019 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:07,021 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,022 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,022 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,022 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,022 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,493 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:07,859 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,860 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,861 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,861 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,861 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,861 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:07,860 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:07,861 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:07,862 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:08,493 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:08,703 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:08,703 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:08,704 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:08,704 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:08,704 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:08,705 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:08,705 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:08,705 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:08,705 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:09,495 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:09,543 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:09,544 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:09,545 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:09,545 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:09,545 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:09,545 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:09,547 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:09,548 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:09,548 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:10,409 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:10,410 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:10,410 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:10,410 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:10,411 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:10,411 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:10,411 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:10,411 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:10,412 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:10,495 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:11,248 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:11,249 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:11,250 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:11,250 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:11,250 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:11,250 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:11,251 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:11,251 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:11,252 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:11,252 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:11,495 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:12,096 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,097 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,097 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,097 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,097 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,098 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,098 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:12,098 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:12,100 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:12,497 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:12,934 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,935 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,935 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,935 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:12,936 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,936 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:12,936 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,937 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:12,937 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:13,497 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:13,825 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:13,826 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:13,826 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:13,827 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:13,827 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:13,827 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:13,827 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:13,828 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:13,828 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:14,498 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:14,753 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:14,754 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:14,754 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:14,755 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:14,755 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:14,755 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:14,755 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:14,755 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:14,758 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:15,499 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:15,616 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:15,617 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:15,617 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:15,617 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:15,618 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:15,618 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:15,617 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:15,618 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:15,618 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:16,475 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:16,476 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:16,476 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:16,477 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:16,477 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:16,477 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:16,478 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:16,478 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:16,478 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:16,478 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:16,499 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:16,811 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 15:35:16,812 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 15:35:16,819 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 15:35:17,319 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:17,320 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:17,320 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:17,320 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:17,320 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:17,320 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,155 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,155 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,156 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,156 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,156 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,156 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,829 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:18,830 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:18,830 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:18,831 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:18,831 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:18,831 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:18,991 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,993 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:18,993 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,993 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:18,993 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:18,994 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:19,500 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:19,824 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:19,824 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:19,825 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:19,825 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:19,825 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:19,825 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:19,825 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:19,826 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:19,826 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:20,500 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:20,659 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:20,660 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:20,660 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:20,661 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:20,661 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:20,661 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:20,662 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:20,664 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:20,664 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,497 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,497 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,498 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:21,498 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,498 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:21,498 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,499 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,499 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:21,499 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:21,499 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:21,500 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:22,332 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:22,333 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:22,333 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:22,333 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:22,343 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:22,343 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:22,344 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:22,344 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:22,344 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:22,501 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:23,178 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:23,178 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:23,179 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:23,179 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:23,179 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:23,179 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:23,179 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:23,180 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:23,182 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:23,501 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:24,027 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,028 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,029 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,029 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:24,029 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,029 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:24,030 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,030 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,030 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:24,502 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:24,875 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,876 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,876 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,877 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:24,877 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,877 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:24,878 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,878 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:24,878 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:25,502 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:25,716 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:25,717 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:25,718 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:25,718 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:25,720 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:25,721 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:25,721 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:25,721 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:25,721 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:26,502 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:26,563 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:26,564 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:26,564 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:26,565 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:26,565 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:26,565 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:26,566 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:26,566 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:26,566 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:26,567 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:27,404 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:27,405 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:27,405 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:27,405 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:27,406 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:27,406 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:27,406 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:27,406 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:27,406 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:27,503 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:28,237 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:28,237 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:28,238 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:28,238 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:28,238 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:28,240 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:28,240 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:28,241 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:28,241 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:28,503 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:29,067 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,067 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,067 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,068 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,068 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,068 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,068 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:29,069 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:29,069 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:29,504 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:29,910 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,911 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:29,911 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:29,912 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:29,912 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,913 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,913 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,913 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:29,913 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,504 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:30,745 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,746 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,746 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,746 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:30,746 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,747 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:30,748 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,749 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:30,749 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:31,504 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:31,578 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:31,578 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:31,579 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:31,579 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:31,584 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:31,584 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:31,584 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:31,584 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:31,812 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 15:35:31,813 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 15:35:31,868 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:31,869 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:31,869 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 15:35:32,428 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:32,429 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:32,430 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:32,430 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:32,469 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:32,469 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:32,469 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:32,469 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:32,469 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:32,505 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/config.yaml
+2024-03-21 15:35:32,506 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:33,297 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:33,299 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:33,299 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:33,300 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:33,300 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:33,307 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:33,307 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:33,307 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:33,308 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:33,506 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:34,135 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,136 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,136 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,136 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,136 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:34,136 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,137 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:34,138 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:34,137 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,506 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:34,989 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,990 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,990 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:34,991 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:34,991 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:34,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:34,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:35,506 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:35,826 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:35,827 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:35,827 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:35,829 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:35,830 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:35,830 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:35,830 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:35,830 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:35,830 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,508 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:36,834 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,835 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,836 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,836 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,836 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,836 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:36,836 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:36,836 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:36,837 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:37,508 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:37,695 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:37,696 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:37,697 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:37,698 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:37,699 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:37,699 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:37,699 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:37,699 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:37,699 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:37,699 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:38,509 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:38,559 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:38,562 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:38,562 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:38,562 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:38,567 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:38,568 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:38,568 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:38,568 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:38,568 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,428 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,429 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:39,430 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:39,430 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:39,431 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:39,509 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:40,281 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:40,282 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:40,282 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:40,283 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:40,292 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:40,292 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:40,292 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:40,293 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:40,293 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:40,510 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:41,123 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,125 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:41,125 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:41,126 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:41,130 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,130 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,131 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,131 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,131 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,510 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:41,968 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,969 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,969 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:41,969 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:41,970 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,970 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,970 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,970 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:41,970 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:42,511 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:42,801 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:42,801 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:42,802 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:42,802 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:42,803 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:42,803 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:42,803 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:42,804 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:42,804 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:42,804 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,511 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:43,629 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,629 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,630 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:43,630 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,630 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:43,632 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,633 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,633 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:43,633 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:44,463 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:44,464 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:44,464 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:44,464 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:44,465 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:44,465 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:44,465 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:44,465 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:44,465 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:44,511 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:45,298 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:45,299 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:45,300 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:45,300 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:45,300 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:45,300 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:45,300 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:45,300 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:45,301 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:45,512 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:46,143 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,144 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,144 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,144 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,144 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:46,145 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,145 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:46,145 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,145 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:46,512 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:46,811 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-21 15:35:46,812 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: stop_status
+2024-03-21 15:35:46,814 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 15:35:46,991 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:46,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:47,840 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:47,841 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:47,841 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:47,842 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:47,842 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:47,842 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:48,096 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:48,096 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:48,096 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:48,097 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:48,097 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:48,097 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:48,098 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:48,513 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:48,684 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:48,685 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:48,686 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:48,686 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:48,686 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:48,686 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:48,687 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:48,687 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:48,687 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:49,513 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:49,519 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:49,520 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:49,520 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:49,521 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:49,520 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:49,521 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:49,521 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:49,521 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:49,522 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,364 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,365 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,365 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,366 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,366 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,366 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:50,366 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:50,366 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:50,367 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:50,514 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:51,216 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:51,217 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:51,217 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:51,217 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:51,218 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:51,218 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:51,218 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:51,218 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:51,218 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:51,514 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:52,069 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,069 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,069 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,070 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,070 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:52,070 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,070 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:52,071 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,071 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:52,515 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:52,910 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,911 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,911 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,912 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,912 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:52,912 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,912 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:52,913 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:52,915 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:53,515 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:53,755 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:53,756 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:53,761 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:53,761 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:53,761 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:53,761 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:53,762 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:53,762 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:53,763 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:53,762 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:54,515 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:54,590 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:54,591 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:54,592 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:54,592 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:54,592 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:54,592 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:54,592 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:54,593 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:54,593 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:55,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:55,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:55,431 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:55,431 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:55,433 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:55,433 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:55,434 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:55,431 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:55,434 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:55,516 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:56,271 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:56,272 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:56,273 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:56,273 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:56,273 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:56,273 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:56,272 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:56,273 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:56,274 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:56,516 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:57,148 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,149 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:57,149 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,149 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:57,149 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,150 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,150 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,150 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,150 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:57,516 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:57,988 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,988 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,989 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:57,989 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,989 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:57,991 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,991 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,992 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:57,992 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:58,517 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:58,837 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:58,838 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:58,838 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:58,838 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:58,839 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:58,841 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:58,841 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:58,841 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:58,841 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:35:58,841 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:59,517 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:35:59,711 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:59,713 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:35:59,714 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:35:59,715 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:35:59,716 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:59,717 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:59,717 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:59,717 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:35:59,717 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,519 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:36:00,593 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,594 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:36:00,595 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:36:00,595 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:36:00,598 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,598 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,598 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,599 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,599 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-21 15:36:00,866 DEBUG   SenderThread:1786341 [sender.py:send():378] send: exit
+2024-03-21 15:36:00,866 INFO    SenderThread:1786341 [sender.py:send_exit():585] handling exit code: 255
+2024-03-21 15:36:00,867 INFO    SenderThread:1786341 [sender.py:send_exit():587] handling runtime: 59
+2024-03-21 15:36:00,867 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:36:00,868 INFO    SenderThread:1786341 [sender.py:send_exit():593] send defer
+2024-03-21 15:36:00,868 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:00,868 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-21 15:36:00,868 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:00,869 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-21 15:36:00,869 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 1
+2024-03-21 15:36:00,869 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:00,869 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-21 15:36:00,869 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:00,869 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-21 15:36:00,869 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 2
+2024-03-21 15:36:00,869 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:00,869 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-21 15:36:00,869 INFO    HandlerThread:1786341 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-21 15:36:00,870 DEBUG   SystemMonitor:1786341 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-21 15:36:00,870 DEBUG   SystemMonitor:1786341 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-21 15:36:00,870 DEBUG   SystemMonitor:1786341 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-21 15:36:00,874 INFO    HandlerThread:1786341 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-21 15:36:00,874 INFO    HandlerThread:1786341 [interfaces.py:finish():202] Joined disk monitor
+2024-03-21 15:36:01,520 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:36:03,522 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/output.log
+2024-03-21 15:36:03,586 INFO    HandlerThread:1786341 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-21 15:36:03,586 INFO    HandlerThread:1786341 [interfaces.py:finish():202] Joined memory monitor
+2024-03-21 15:36:03,587 INFO    HandlerThread:1786341 [interfaces.py:finish():202] Joined network monitor
+2024-03-21 15:36:03,587 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-21 15:36:03,587 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:03,587 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-21 15:36:03,587 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 3
+2024-03-21 15:36:03,588 DEBUG   SenderThread:1786341 [sender.py:send():378] send: stats
+2024-03-21 15:36:03,588 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:03,588 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: poll_exit
+2024-03-21 15:36:03,588 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-21 15:36:03,590 DEBUG   SenderThread:1786341 [sender.py:send():378] send: history
+2024-03-21 15:36:03,590 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: summary_record
+2024-03-21 15:36:03,590 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:36:03,590 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:03,591 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-21 15:36:03,591 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 4
+2024-03-21 15:36:03,591 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:03,591 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-21 15:36:03,591 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:03,591 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-21 15:36:03,591 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 5
+2024-03-21 15:36:03,591 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:03,591 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-21 15:36:03,592 DEBUG   SenderThread:1786341 [sender.py:send():378] send: summary
+2024-03-21 15:36:03,592 INFO    SenderThread:1786341 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-21 15:36:03,592 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:03,593 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-21 15:36:03,593 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 6
+2024-03-21 15:36:03,593 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:03,593 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-21 15:36:03,593 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:03,593 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-21 15:36:03,593 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 7
+2024-03-21 15:36:03,593 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: status_report
+2024-03-21 15:36:03,594 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:03,594 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-21 15:36:03,594 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:03,594 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-21 15:36:03,852 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-21 15:36:04,522 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:36:04,877 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 8
+2024-03-21 15:36:04,877 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: poll_exit
+2024-03-21 15:36:04,877 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:04,878 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-21 15:36:04,878 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:04,878 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-21 15:36:04,878 INFO    SenderThread:1786341 [job_builder.py:build():298] Attempting to build job artifact
+2024-03-21 15:36:04,879 INFO    SenderThread:1786341 [job_builder.py:_get_source_type():439] no source found
+2024-03-21 15:36:04,879 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 9
+2024-03-21 15:36:04,879 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:04,879 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-21 15:36:04,879 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:04,879 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-21 15:36:04,879 INFO    SenderThread:1786341 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-21 15:36:05,523 INFO    Thread-12 :1786341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/output.log
+2024-03-21 15:36:05,523 INFO    SenderThread:1786341 [dir_watcher.py:finish():388] scan: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files
+2024-03-21 15:36:05,524 INFO    SenderThread:1786341 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/output.log output.log
+2024-03-21 15:36:05,524 INFO    SenderThread:1786341 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-metadata.json wandb-metadata.json
+2024-03-21 15:36:05,524 INFO    SenderThread:1786341 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/requirements.txt requirements.txt
+2024-03-21 15:36:05,527 INFO    SenderThread:1786341 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json wandb-summary.json
+2024-03-21 15:36:05,528 INFO    SenderThread:1786341 [dir_watcher.py:finish():402] scan save: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/config.yaml config.yaml
+2024-03-21 15:36:05,528 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 10
+2024-03-21 15:36:05,532 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:05,536 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-21 15:36:05,536 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:05,537 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-21 15:36:05,537 INFO    SenderThread:1786341 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-21 15:36:05,853 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-21 15:36:05,853 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: poll_exit
+2024-03-21 15:36:06,195 INFO    wandb-upload_0:1786341 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/output.log
+2024-03-21 15:36:06,286 INFO    wandb-upload_1:1786341 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/requirements.txt
+2024-03-21 15:36:06,296 INFO    wandb-upload_3:1786341 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/config.yaml
+2024-03-21 15:36:06,356 INFO    wandb-upload_2:1786341 [upload_job.py:push():131] Uploaded file /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/files/wandb-summary.json
+2024-03-21 15:36:06,557 INFO    Thread-11 :1786341 [sender.py:transition_state():613] send defer: 11
+2024-03-21 15:36:06,557 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:06,557 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-21 15:36:06,558 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:06,558 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-21 15:36:06,558 INFO    SenderThread:1786341 [file_pusher.py:join():178] waiting for file pusher
+2024-03-21 15:36:06,558 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 12
+2024-03-21 15:36:06,558 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:06,559 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-21 15:36:06,559 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:06,559 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-21 15:36:06,559 INFO    SenderThread:1786341 [file_stream.py:finish():595] file stream finish called
+2024-03-21 15:36:06,854 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-21 15:36:07,428 INFO    SenderThread:1786341 [file_stream.py:finish():599] file stream finish is done
+2024-03-21 15:36:07,428 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 13
+2024-03-21 15:36:07,429 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: poll_exit
+2024-03-21 15:36:07,429 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:07,429 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-21 15:36:07,429 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:07,429 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-21 15:36:07,430 INFO    SenderThread:1786341 [sender.py:transition_state():613] send defer: 14
+2024-03-21 15:36:07,430 DEBUG   SenderThread:1786341 [sender.py:send():378] send: final
+2024-03-21 15:36:07,430 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: defer
+2024-03-21 15:36:07,430 DEBUG   SenderThread:1786341 [sender.py:send():378] send: footer
+2024-03-21 15:36:07,430 INFO    HandlerThread:1786341 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-21 15:36:07,430 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: defer
+2024-03-21 15:36:07,431 INFO    SenderThread:1786341 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-21 15:36:07,432 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-21 15:36:07,432 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-21 15:36:07,432 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: server_info
+2024-03-21 15:36:07,432 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-21 15:36:07,432 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-21 15:36:07,433 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-21 15:36:07,434 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: poll_exit
+2024-03-21 15:36:07,434 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: poll_exit
+2024-03-21 15:36:07,434 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: server_info
+2024-03-21 15:36:07,436 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: job_info
+2024-03-21 15:36:07,711 DEBUG   SenderThread:1786341 [sender.py:send_request():405] send_request: job_info
+2024-03-21 15:36:07,711 INFO    MainThread:1786341 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2024-03-21 15:36:07,712 INFO    MainThread:1786341 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2024-03-21 15:36:07,712 INFO    MainThread:1786341 [wandb_run.py:_footer_sync_info():3810] logging synced files
+2024-03-21 15:36:07,713 DEBUG   HandlerThread:1786341 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-21 15:36:07,713 INFO    HandlerThread:1786341 [handler.py:finish():869] shutting down handler
+2024-03-21 15:36:08,437 INFO    WriterThread:1786341 [datastore.py:close():296] close: /raid/home/rizwank/courses/DLCV/Project/wandb/run-20240321_153500-u1xnv9w7/run-u1xnv9w7.wandb
+2024-03-21 15:36:08,711 INFO    SenderThread:1786341 [sender.py:finish():1521] shutting down sender
+2024-03-21 15:36:08,711 INFO    SenderThread:1786341 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-21 15:36:08,711 INFO    SenderThread:1786341 [file_pusher.py:join():178] waiting for file pusher

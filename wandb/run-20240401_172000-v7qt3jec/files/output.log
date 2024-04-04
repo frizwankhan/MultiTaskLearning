@@ -1,0 +1,34 @@
+  0%|                                                                                                               | 0/1250 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 65, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 107, in train
+    for i, batch in enumerate(self.train_dataloader):
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1346, in _next_data
+    return self._process_data(data)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1372, in _process_data
+    data.reraise()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/_utils.py", line 722, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/raid/home/rizwank/courses/DLCV/Project/data/cityscapes3d.py", line 128, in __getitem__
+    lbl = imageio.imread(lbl_path)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/imageio/__init__.py", line 97, in imread
+    return imread_v2(uri, format=format, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/imageio/v2.py", line 359, in imread
+    with imopen(uri, "ri", **imopen_args) as file:
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/imageio/core/imopen.py", line 113, in imopen
+    request = Request(uri, io_mode, format_hint=format_hint, extension=extension)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/imageio/core/request.py", line 247, in __init__
+    self._parse_uri(uri)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/imageio/core/request.py", line 407, in _parse_uri
+    raise FileNotFoundError("No such file: '%s'" % fn)
+FileNotFoundError: No such file: '/raid/home/rizwank/courses/DLCV/Project/Cityscapes3D/gtFine/train/stuttgart_000023_000019_gtFine_labelIds.png'

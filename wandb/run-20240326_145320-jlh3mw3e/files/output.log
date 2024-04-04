@@ -1,0 +1,69 @@
+
+  0%|                                                                                                                                                                              | 0/248 [00:00<?, ?it/s]
+memory occupied before training 1.5308036804199219
+memory occupied before train_setp 1.5308036804199219
+memory occupied after train_setp 1.6479911804199219
+memory occupied  18.680959701538086
+memory occupied  0.0
+  0%|                                                                                                                                                                              | 0/248 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 68, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 115, in train
+    loss, loss_dict = self.train_step(batch)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 44, in train_step
+    output = self.model.module(images)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 209, in forward
+    x = self.swin_encoder_decoder(x)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 123, in forward
+    decoder_out, _ = self.task_decoder[task_id][i](decoder_inp)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 31, in forward
+    out = self.model(x, output_hidden_states=True)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 1011, in forward
+    encoder_outputs = self.encoder(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 836, in forward
+    layer_outputs = layer_module(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 756, in forward
+    layer_outputs = layer_module(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 687, in forward
+    attention_outputs = self.attention(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 562, in forward
+    self_outputs = self.self(hidden_states, attention_mask, head_mask, output_attentions)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 475, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 31.74 GiB of which 53.38 MiB is free. Process 2991625 has 436.00 MiB memory in use. Including non-PyTorch memory, this process has 31.25 GiB memory in use. Of the allocated memory 30.06 GiB is allocated by PyTorch, and 644.41 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

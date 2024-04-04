@@ -1,0 +1,782 @@
+
+Epoch 0, Loss: 63.1884, step: 0:   0%|                                                                                                                            | 0/496 [00:03<?, ?it/s]
+  0%|                                                                                                                                                             | 0/250 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 249/250 [03:00<00:00,  1.51it/s]
+Results for depth prediction
+rmse           38.0388
+log_rmse       13.2549
+abs_rel        0.9940
+sq_rel         30.6125
+Semantic Segmentation mIoU: 0.5104
+background          3.6129
+aeroplane           0.0446
+bicycle             0.1494
+bird                0.2655
+boat                0.7356
+bottle              1.0678
+bus                 0.1630
+car                 0.3311
+cat                 0.5163
+chair               0.7980
+cow                 0.4142
+diningtable         1.2130
+dog                 0.1401
+horse               0.0673
+motorbike           0.1906
+person              0.4140
+pottedplant         0.1227
+sheep               0.0705
+sofa                0.4025
+train               0.0000
+tvmonitor           0.0000
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [03:00<00:00,  1.64it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 0, Loss: 17.3658, step: 495:   0%|                                                                                                                          | 0/496 [11:08<?, ?it/s]
+  0%|                                                                                                                                                       | 0/496 [00:00<?, ?it/s]
+
+
+Epoch 1, Loss: 16.1545, step: 4:   0%|                                                                                                                      | 0/496 [00:06<?, ?it/s]
+Doing Validation
+Results for depth prediction
+rmse           9.3284
+log_rmse       4.0376
+abs_rel        0.4394
+sq_rel         9.6019
+Semantic Segmentation mIoU: 15.9319
+background          84.7305
+aeroplane           24.8360
+bicycle             82.1072
+bird                0.0000
+boat                0.0000
+bottle              0.0061
+bus                 0.0024
+car                 0.5489
+cat                 81.5881
+chair               0.4789
+cow                 0.3981
+diningtable         12.9584
+dog                 0.9433
+horse               45.9162
+motorbike           0.0007
+person              0.0000
+pottedplant         0.0004
+sheep               0.0191
+sofa                0.0359
+train               0.0000
+tvmonitor           0.0000
+Validation Done
+Epoch: 1| Iteration: 500| TrainingLoss: 16.15450668334961| ValidationLoss: 14.376455596923828
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2, Loss: 7.8781, step: 7:   0%|                                                                                                                       | 0/496 [00:08<?, ?it/s]
+Epoch 2, Loss: 10.5462, step: 8:   0%|                                                                                                                      | 0/496 [00:09<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [02:33<00:00,  1.71it/s]
+Results for depth prediction
+rmse           7.5284
+log_rmse       0.4342
+abs_rel        0.4327
+sq_rel         10.5754
+Semantic Segmentation mIoU: 25.3684
+background          94.8690
+aeroplane           60.6956
+bicycle             80.8096
+bird                0.0000
+boat                0.0015
+bottle              0.0000
+bus                 0.0000
+car                 0.0403
+cat                 83.8072
+chair               12.8854
+cow                 87.9799
+diningtable         28.1042
+dog                 0.0004
+horse               83.5434
+motorbike           0.0000
+person              0.0000
+pottedplant         0.0000
+sheep               0.0000
+sofa                0.0000
+train               0.0000
+tvmonitor           0.0000
+Validation Done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2, Loss: 6.0439, step: 106:   0%|                                                                                                                     | 0/496 [04:18<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 64, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 109, in train
+    loss, loss_dict = self.train_step(batch)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 45, in train_step
+    loss_dict["total"].backward()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe

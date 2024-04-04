@@ -1,0 +1,104 @@
+
+  0%|                                                                                                                   | 0/40 [00:00<?, ?it/s]
+  0%|                                                                                                                  | 0/157 [00:00<?, ?it/s]
+
+
+
+
+
+
+  6%|██████▋                                                                                                  | 10/157 [00:24<04:48,  1.96s/it]
+ Edge Detection Evaluation
+Edge Detection Loss 0.056
+Human Parts mIoU: 6.9390
+background     38.2441
+head           0.0000
+torso          8.3188
+uarm           0.0000
+larm           0.0805
+uleg           1.9296
+lleg           0.0000
+Semantic Segmentation mIoU: 0.2694
+background          0.0000
+aeroplane           0.6521
+bicycle             0.4351
+bird                0.0000
+boat                0.7487
+bottle              0.0000
+bus                 0.0000
+car                 1.4368
+cat                 1.9900
+chair               0.0518
+cow                 0.0000
+diningtable         0.0000
+dog                 0.0000
+horse               0.0000
+motorbike           0.3433
+person              0.0000
+pottedplant         0.0000
+sheep               0.0000
+sofa                0.0005
+train               0.0000
+tvmonitor           0.0000
+Traceback (most recent call last):                                                                            | 10/157 [00:24<04:48,  1.96s/it]
+  File "main.py", line 58, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 112, in train
+    loss, loss_dict = self.train_step(batch)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 39, in train_step
+    output = self.model.module(images)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 189, in forward
+    x = self.swin_encoder_decoder(x)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 121, in forward
+    decoder_out, _ = self.task_decoder[task_id][i](decoder_inp)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 32, in forward
+    out = self.model(x, output_hidden_states=True)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 1012, in forward
+    encoder_outputs = self.encoder(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 837, in forward
+    layer_outputs = layer_module(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 757, in forward
+    layer_outputs = layer_module(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 712, in forward
+    layer_output = self.intermediate(layer_output)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 579, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 31.74 GiB of which 133.38 MiB is free. Including non-PyTorch memory, this process has 31.59 GiB memory in use. Of the allocated memory 30.58 GiB is allocated by PyTorch, and 547.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

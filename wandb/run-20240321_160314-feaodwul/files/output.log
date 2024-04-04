@@ -1,0 +1,67 @@
+
+
+Epoch 0, Loss: 31.4953:   0%|                                                                                                                   | 0/157 [00:04<?, ?it/s]
+Epoch 0, Loss: 31.4953:   0%|                                                                                                                   | 0/157 [00:04<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 58, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 104, in train
+    if config.local_rank==0 and self.iter_count%config.val_interval==0:
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 67, in val_step
+    output = self.model.module(images)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 189, in forward
+    x = self.swin_encoder_decoder(x)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 121, in forward
+    decoder_out, _ = self.task_decoder[task_id][i](decoder_inp)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/model.py", line 32, in forward
+    out = self.model(x, output_hidden_states=True)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 1012, in forward
+    encoder_outputs = self.encoder(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 837, in forward
+    layer_outputs = layer_module(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 757, in forward
+    layer_outputs = layer_module(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 688, in forward
+    attention_outputs = self.attention(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 563, in forward
+    self_outputs = self.self(hidden_states, attention_mask, head_mask, output_attentions)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/home/rizwank/courses/DLCV/Project/transformers/src/transformers/models/swin/modeling_swin.py", line 469, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1685, in __getattr__
+    modules = self.__dict__['_modules']
+KeyboardInterrupt

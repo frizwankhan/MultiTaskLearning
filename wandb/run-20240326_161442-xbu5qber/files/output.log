@@ -1,0 +1,84 @@
+
+  0%|                                                                                                                                                              | 0/93 [00:00<?, ?it/s]
+memory occupied before training 1.5308036804199219
+memory occupied before train_setp 1.5308036804199219
+memory occupied after train_setp 1.5893974304199219
+Epoch 0, Loss: 72.6847, step: 0:   0%|                                                                                                                             | 0/93 [00:04<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋         | 15/16 [01:34<00:06,  6.13s/it]
+Results for depth prediction
+rmse           38.0355
+log_rmse       11.9499
+abs_rel        0.9931
+sq_rel         30.5976
+Semantic Segmentation mIoU: 1.0333
+road                1.6396
+sidewalk            0.1557
+building            6.8755
+wall                0.0028
+fence               0.0346
+pole                0.1656
+traffic_light       0.1685
+traffic_sign        0.1744
+vegetation          7.5249
+terrain             0.4276
+sky                 0.8076
+person              0.0801
+rider               0.1667
+car                 0.4259
+truck               0.2812
+bus                 0.0109
+train               0.1173
+motorcycle          0.0739
+bicycle             0.4997
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [01:37<00:00,  5.18s/it]
+Epoch: 0| Iteration: 0| TrainingLoss: 72.68467712402344| ValidationLoss: 73.60483837127686
+memory occupied before training 3.846996307373047
+memory occupied before train_setp 3.846996307373047
+
+Epoch 0, Loss: 75.9478, step: 1:   0%|                                                                                                                             | 0/93 [01:49<?, ?it/s]
+memory occupied before training 3.854140281677246
+memory occupied before train_setp 3.854140281677246
+memory occupied after train_setp 3.912734031677246
+memory occupied before training 3.852334976196289
+memory occupied before train_setp 3.852334976196289
+
+Epoch 0, Loss: 76.7095, step: 2:   0%|                                                                                                                             | 0/93 [01:51<?, ?it/s]
+memory occupied before training 3.8505377769470215
+memory occupied before train_setp 3.8505377769470215
+
+Epoch 0, Loss: 72.9409, step: 3:   0%|                                                                                                                             | 0/93 [01:53<?, ?it/s]
+memory occupied before training 3.8524937629699707
+memory occupied before train_setp 3.8524937629699707
+
+
+Epoch 0, Loss: 72.6595, step: 5:   0%|                                                                                                                             | 0/93 [01:57<?, ?it/s]
+memory occupied before training 3.852902889251709
+memory occupied before train_setp 3.852902889251709
+Epoch 0, Loss: 72.6595, step: 5:   0%|                                                                                                                             | 0/93 [01:57<?, ?it/s]Traceback (most recent call last):
+  File "main.py", line 68, in <module>
+    trainer.train(config)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 115, in train
+    loss, loss_dict = self.train_step(batch)
+  File "/raid/home/rizwank/courses/DLCV/Project/train.py", line 49, in train_step
+    loss_dict["total"].backward()
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/raid/home/rizwank/courses/DLCV/Project/env/lib/python3.8/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
