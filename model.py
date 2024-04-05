@@ -63,9 +63,9 @@ class SwinEncoderDecoder(nn.Module):
         self.task_head = [[] for _ in range(len(config.tasks))]
         
         for task, include_task in config.tasks.items():
-            task_id = self.task_to_id[task]
             if not include_task:
                 continue
+            task_id = self.task_to_id[task]
             for i in range(4):
                 if i==0:
                     num_channels = self.layers[-1]
@@ -107,6 +107,7 @@ class SwinEncoderDecoder(nn.Module):
         
         temp = {}
         for task, task_id in self.task_to_id.items():
+            
             for i in range(4):
                 if i==0:
                     encoder_out = encoder_out_temp
