@@ -127,9 +127,9 @@ class CITYSCAPES3D(data.Dataset):
             'dd_label_map_size': self.dd_label_map_size,
             'scale_factor': np.array([self.img_size[1]/img.shape[1], self.img_size[0]/img.shape[0]]), # in xy order
             }
-
+        lbl = imageio.imread(lbl_path)
         if 'semseg' in self.task_list:
-            lbl = imageio.imread(lbl_path)
+            # lbl = imageio.imread(lbl_path)
             sample['semseg'] = lbl
             sample['semseg'] = self.encode_segmap(sample['semseg'])
 
