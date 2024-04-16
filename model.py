@@ -103,7 +103,6 @@ class SwinEncoderDecoder(nn.Module):
         out, out_downsampled = self.encoder(x) #out_downsampled=(batch_size, h/64*w/64, 1536)
         encoder_out_image_size = [shape//(2**6) for shape in self.config.image_size]
         encoder_out_temp = out_downsampled.view(batch_size, *encoder_out_image_size, self.layers[-1]).permute(0, 3, 1, 2)
-        del out_downsampled
         
         temp = {}
         for task, task_id in self.task_to_id.items():
@@ -120,14 +119,12 @@ class SwinEncoderDecoder(nn.Module):
 
                 decoder_out, _ = self.task_decoder[task_id][i](decoder_inp)
                 decoder_out = decoder_out.hidden_states[-1]
-                del _
                 torch.cuda.empty_cache()
                 gc.collect()
                 
                 encoder_out_image_size = [shape//(2**(4-i+2)) for shape in self.config.image_size]
                 upsampler_inp = decoder_out.view(batch_size, *encoder_out_image_size,-1).permute(0, 3, 1, 2)
                 decoder_out = self.task_upsampler[task_id][i](upsampler_inp)
-                del encoder_out, decoder_inp, upsampler_inp
                 
             temp[task] = decoder_out
         
@@ -143,18 +140,18 @@ class BottleNeck(nn.Module):
             self.seq = nn.Sequential(
                 nn.ConvTranspose2d(
                     in_channels=config.embed_dim,
-                    out_channels=config.embed_dim//2,
+                    out_channels=config.embed_dim,
                     kernel_size=2,
                     stride=2
                 ),
                 nn.Conv2d(
-                    in_channels=config.embed_dim//2,
-                    out_channels=config.embed_dim//2,
+                    in_channels=config.embed_dim,
+                    out_channels=config.embed_dim,
                     kernel_size=1
                 ),
                 nn.ConvTranspose2d(
-                    in_channels=config.embed_dim//2,
-                    out_channels=config.embed_dim//4,
+                    in_channels=config.embed_dim,
+                    out_channels=config.embed_dim,
                     kernel_size=2,
                     stride=2
                 )
@@ -163,18 +160,18 @@ class BottleNeck(nn.Module):
             self.seq = nn.Sequential(
                 nn.ConvTranspose2d(
                     in_channels=config.embed_dim,
-                    out_channels=config.embed_dim//2,
+                    out_channels=config.embed_dim,
                     kernel_size=2,
                     stride=2
                 ),
                 nn.Conv2d(
-                    in_channels=config.embed_dim//2,
-                    out_channels=config.embed_dim//2,
+                    in_channels=config.embed_dim,
+                    out_channels=config.embed_dim,
                     kernel_size=1
                 ),
                 nn.ConvTranspose2d(
-                    in_channels=config.embed_dim//2,
-                    out_channels=config.embed_dim//4,
+                    in_channels=config.embed_dim,
+                    out_channels=config.embed_dim,
                     kernel_size=2,
                     stride=2
                 )
@@ -191,13 +188,13 @@ class MLPHead(nn.Module):
         
         if config.dataset=="PASCAL_MT":
             self.projection = nn.Conv2d(
-                in_channels=config.embed_dim//4,
+                in_channels=config.embed_dim,
                 out_channels=num_classes,
                 kernel_size=1
             )
         else:
             self.projection = nn.Conv2d(
-                in_channels=config.embed_dim//4,
+                in_channels=config.embed_dim,
                 out_channels=num_classes,
                 kernel_size=1
             )
@@ -205,6 +202,49 @@ class MLPHead(nn.Module):
     def forward(self, x):
         x = self.projection(x)
         return x
+    
+class FinalBottleNeck(nn.Module):
+    def __init__(self, dim) -> None:
+        super().__init__()
+        
+        self.conv1 = nn.Conv2d(dim, dim//4, kernel_size=1, stride=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(dim//4)
+        self.conv2 = nn.Conv2d(dim//4, dim//4, kernel_size=3, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(dim//4)
+        self.conv3 = nn.Conv2d(dim//4, dim, kernel_size=1, stride=1, bias=False)
+        self.bn3 = nn.BatchNorm2d(dim)
+        self.relu = nn.ReLU()
+        
+    def forward(self, x):
+        identity = x
+
+        out = self.conv1(x)
+        out = self.bn1(out)
+        out = self.relu(out)
+
+        out = self.conv2(out)
+        out = self.bn2(out)
+        out = self.relu(out)
+
+        out = self.conv3(out)
+        out = self.bn3(out)
+
+        out += identity
+        out = self.relu(out)
+
+        return out
+    
+class SelfAttentionBlock(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super().__init__()
+        self.attention = nn.Sequential(nn.Conv2d(in_channels, out_channels, 3, padding=1, bias=False),
+                                        nn.Sigmoid())
+        self.conv = nn.Conv2d(in_channels, out_channels, 3, padding=1, bias=False)
+
+    def forward(self, x):
+        attention_mask = self.attention(x)
+        features = self.conv(x)
+        return torch.mul(features, attention_mask)
     
 class MultiTaskModel(nn.Module):
     def __init__(self, config) -> None:
@@ -230,7 +270,67 @@ class MultiTaskModel(nn.Module):
                 out[task] = self.heads[task](out_task)
                 
         return out
+    
+class DistillationModule(nn.Module):
+    def __init__(self, tasks, channels):
+        super().__init__()
+        self.tasks = tasks
+        self.self_attention = {}
         
+        for t in self.tasks:
+            other_tasks = [a for a in self.tasks if a != t]
+            self.self_attention[t] = nn.ModuleDict({a: SelfAttentionBlock(channels, channels) for a in other_tasks})
+        self.self_attention = nn.ModuleDict(self.self_attention)
+
+
+    def forward(self, x):
+        adapters = {}
+        for t in self.tasks:
+            for a in self.tasks:
+                if a==t:
+                    continue
+                adapters[t][a] = self.self_attention[t][a](x[f"feature_{a}"])
+        out = {t: x['features_%s' %(t)] + torch.sum(torch.stack([v for v in adapters[t].values()]), dim=0) for t in self.tasks}
+        return out
+    
+class MultiTaskDistillationModel(nn.Module):
+    def __init__(self, config) -> None:
+        super().__init__()
+        self.config = config
+        self.tasks = [task for task, include_task in config.tasks.items() if include_task]
+        
+        self.swin_encoder_decoder = SwinEncoderDecoder(config)
+        self.bottleneck = nn.ModuleDict()
+        self.heads = nn.ModuleDict()
+        for task in self.tasks:
+            self.heads[task] = MLPHead(config, config.num_classes[task])
+            self.bottleneck[task] = BottleNeck(config)
+            
+        self.distillation = DistillationModule(self.tasks, config.embed_dim)
+        
+        final_heads = {}
+        for task in self.tasks:
+            bottleneck1 = FinalBottleNeck(config.embed_dim)
+            bottleneck2 = FinalBottleNeck(config.embed_dim)
+            conv_out_ = nn.Conv2d(config.embed_dim, config.num_classes[task], kernel_size=1)
+            final_heads[task] = nn.Sequential(bottleneck1, bottleneck2, conv_out_)
+
+        self.final_heads = nn.ModuleDict(final_heads)
+    
+    def forward(self, x):
+        x = self.swin_encoder_decoder(x)
+        
+        out = {}
+        for task in self.tasks:
+            out[f"feature_{task}"] = self.bottleneck[task](x[task])
+            out[f"initial_{task}"] = self.heads[task](out[f"feature_{task}"])
+            
+        distill_out = self.multi_modal_distillation(out)
+        
+        for task in self.tasks:
+            out[task] = self.final_heads[task](distill_out[task])
+                
+        return out
         
 
 

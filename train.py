@@ -47,9 +47,10 @@ class Trainer:
             wandb.log({"train_loss": loss_dict["total"].item()}, step=self.iter_count)
             for task in self.tasks:
                 wandb.log({f"train_{task}_loss": loss_dict[task].item()}, step=self.iter_count)
+                if self.config.distillation:
+                    wandb.log({f"train_initial_{task}_loss": loss_dict[f"initial_{task}"].item()}, step=self.iter_count)
             wandb.log({"learning rate": self.scheduler.get_last_lr()[0]}, step=self.iter_count)
         
-        del images, output, batch
         return loss_dict["total"].item(), loss_dict
     
     def log_eval_results(self, eval_results):
@@ -90,7 +91,6 @@ class Trainer:
         self.log_eval_results(eval_results)
         print("Validation Done")
         print()
-        del images, targets, output, eval_results
         return epoch_loss/len(self.test_dataloader)
     
     def train(self, config):

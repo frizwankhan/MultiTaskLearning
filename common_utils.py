@@ -2,7 +2,7 @@ from data import transforms
 from data.pascal_context import PASCALContext
 from data.cityscapes3d import CITYSCAPES3D
 from losses.loss_functions import *
-from losses.multitask_loss import MultiTaskLoss
+from losses.multitask_loss import MultiTaskLoss, MultiTaskDistillationLoss
 
 import torchvision
 from torch.utils.data import DataLoader
@@ -175,8 +175,12 @@ def get_criterion(config):
         if include_task:
             tasks.append(task)
             loss_function[task] = get_loss(config, task)
-            
-    return MultiTaskLoss(config, tasks, loss_function, config.loss_weights)
+    
+    if config.distillation:
+        return MultiTaskDistillationLoss(tasks, loss_function, config.loss_weights)
+    else:
+        return MultiTaskLoss(config, tasks, loss_function, config.loss_weights)
+    
 
 def to_cuda(batch):
     if type(batch) == dict:

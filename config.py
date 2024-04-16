@@ -16,6 +16,7 @@ class PascalConfig:
     decoder_depth: int = 2
     decoder_n_head: list = field(default_factory=lambda: [48, 24, 12, 6])  
     decoder_window_size: list = field(default_factory=lambda: [4, 4, 8, 8])
+    distillation = False
     
     # dataset
     project_path: str = os.path.dirname(os.path.abspath(__file__))
@@ -27,11 +28,11 @@ class PascalConfig:
     
     # task config
     tasks = {
-        "edge" : True, 
-        "human_parts" : True, 
+        "edge" : False, 
+        "human_parts" : False, 
         "semseg" : True, 
-        "normals" : True, 
-        "sal" : True
+        "normals" : False, 
+        "sal" : False
         }
     ignore_index: int = 255
     loss_weights = {
@@ -63,36 +64,40 @@ class PascalConfig:
     
     # wandb
     wandb_project: str = "encoder-decoder-dlcv"
-    wandb_run_name: str = "test-4"
+    wandb_run_name: str = "test-new"
 
 @dataclass
 class CityscapesConfig:
     # image config
     image_size = [512, 1024]
     embed_dim: int = 96
-    dataset: str = "Cityscapes3D"
+    # dataset: str = "Cityscapes3D"
+    dataset="pascal"
     
     # decoder config
     decoder_depth: int = 2
     decoder_n_head: list = field(default_factory=lambda: [48, 24, 12, 6])  
     decoder_window_size: list = field(default_factory=lambda: [4, 4, 8, 8])
+    distillation = False
     
     # dataset
     project_path: str = os.path.dirname(os.path.abspath(__file__))
     pascal_path: str = os.path.join(project_path, "Cityscapes3D")
     train_batch_size: int = 4
-    val_batch_size: int = 32
+    val_batch_size: int = 14
     num_workers_data: int = 1
     
     
     # task config
     tasks = {
-        "depth" : True, 
+        "depth" : False, 
         "semseg" : True, 
         }
     ignore_index: int = 255
     loss_weights = {
-        "semseg": 13.0,
+        # "semseg": 13.0,
+        # "depth": 1.0
+        "semseg": 1.0,
         "depth": 1.0
     }
     num_classes = {
@@ -103,19 +108,19 @@ class CityscapesConfig:
        
     
     # Optimizer
-    epochs: int = 50
+    epochs: int = 30
     warmup_steps: int =1000
     optimizer_kwargs = {
         "lr": 0.00005,
         "weight_decay": 0.000001
     }
-    val_interval: int = 500
-    save_interval: int = 500
+    val_interval: int = 1000
+    save_interval: int = 1000
     resume_training: bool = True
     
     # wandb
-    wandb_project: str = "encoder-decoder-dlcv-cityscapes"
-    wandb_run_name: str = "cityscapes-full-mlp-all-data"
+    wandb_project: str = "encoder-decoder-cityscapes-single"
+    wandb_run_name: str = "cityscapes-single-semseg"
     
 def get_default_config():
     if DATASET=="Cityscapes3D":
