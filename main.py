@@ -1,5 +1,6 @@
 """
 torchrun --nproc_per_node=4 --nnodes=1 --master_port 29600 main.py
+python3 -m torch.distributed.run --nproc_per_node=2 --nnodes=1 --master_port 29602 main.py
 """
 
 

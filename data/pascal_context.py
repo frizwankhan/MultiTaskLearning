@@ -11,7 +11,7 @@ from PIL import Image
 from skimage.morphology import thin
 from six.moves import urllib
 
-PROJECT_ROOT_DIR = "/raid/home/rizwank/courses/DLCV/Project"
+PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 class PASCALContext(data.Dataset):

@@ -286,11 +286,12 @@ class DistillationModule(nn.Module):
     def forward(self, x):
         adapters = {}
         for t in self.tasks:
+            adapters[t] = {}
             for a in self.tasks:
                 if a==t:
                     continue
                 adapters[t][a] = self.self_attention[t][a](x[f"feature_{a}"])
-        out = {t: x['features_%s' %(t)] + torch.sum(torch.stack([v for v in adapters[t].values()]), dim=0) for t in self.tasks}
+        out = {t: x['feature_%s' %(t)] + torch.sum(torch.stack([v for v in adapters[t].values()]), dim=0) for t in self.tasks}
         return out
     
 class MultiTaskDistillationModel(nn.Module):
@@ -325,7 +326,7 @@ class MultiTaskDistillationModel(nn.Module):
             out[f"feature_{task}"] = self.bottleneck[task](x[task])
             out[f"initial_{task}"] = self.heads[task](out[f"feature_{task}"])
             
-        distill_out = self.multi_modal_distillation(out)
+        distill_out = self.distillation(out)
         
         for task in self.tasks:
             out[task] = self.final_heads[task](distill_out[task])
@@ -335,7 +336,10 @@ class MultiTaskDistillationModel(nn.Module):
 
 
 def get_model(config):
-    model = MultiTaskModel(config)
+    if config.distillation:
+        model = MultiTaskDistillationModel(config)
+    else:
+        model = MultiTaskModel(config)
     return model
 
 if __name__ == "__main__":

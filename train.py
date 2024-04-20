@@ -59,6 +59,7 @@ class Trainer:
                 wandb.log({f"val_{task}_{metric}": value}, step=self.iter_count)
     
     def val_step(self):
+        print("Validation")
         performence_meter = PerformanceMeter(self.config, self.tasks)
         self.model.eval()
         epoch_loss = 0
