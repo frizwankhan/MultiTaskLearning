@@ -17,6 +17,7 @@ class PascalConfig:
     decoder_n_head: list = field(default_factory=lambda: [48, 24, 12, 6])  
     decoder_window_size: list = field(default_factory=lambda: [4, 4, 8, 8])
     distillation = False
+    model_name = "distillation-edge-normals"
     
     # dataset
     project_path: str = os.path.dirname(os.path.abspath(__file__))
@@ -78,6 +79,7 @@ class CityscapesConfig:
     decoder_n_head: list = field(default_factory=lambda: [48, 24, 12, 6])  
     decoder_window_size: list = field(default_factory=lambda: [4, 4, 8, 8])
     distillation = True
+    model_name = "distillation-edge-normals"
     
     # dataset
     project_path: str = os.path.dirname(os.path.abspath(__file__))

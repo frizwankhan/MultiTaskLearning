@@ -20,7 +20,7 @@ class Trainer:
         self.test_dataloader = test_dataloader
         self.sampler = sampler
         
-        self.model_name = model_name
+        self.model_name = config.model_name
         
         self.iter_count = 0
         self.n_epochs = 0
